@@ -1,1 +1,0 @@
-import{Ga as a,Ha as i,Ma as r,Na as s,O as o}from"./chunk-6CVQH5JQ.js";var d=(()=>{let t=class t{};t.\u0275fac=function(n){return new(n||t)},t.\u0275cmp=o({type:t,selectors:[["app-contact-us"]],standalone:!0,features:[s],decls:2,vars:0,template:function(n,p){n&1&&(a(0,"p"),r(1,"contact-us works!"),i())}});let e=t;return e})();export{d as ContactUsComponent};

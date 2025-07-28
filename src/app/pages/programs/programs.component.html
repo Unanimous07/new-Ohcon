@@ -1,98 +1,227 @@
-<div class="w-full grid gap-12 px-4 py-6 text-center md:px-6 lg:gap-24 xl:gap-16 xl:py-12">
+<!-- Programs Page -->
+<div class="bg-gray-50 min-h-screen">
+  <!-- Hero Section -->
+  <section class="hero-section py-20 text-white relative">
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-3xl mx-auto text-center slide-up">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Programs</h1>
+        <p class="text-xl opacity-90">Transforming healthcare through education, research, and community engagement.</p>
+      </div>
+    </div>
+  </section>
 
-          <!-- first -->
-          <div class="grid gap-6 md:grid-cols-2 " >
-            <div class="flex flex-col gap-1">
-              <h2 class="text-2xl font-bold uppercase  bg-white rounded-lg rounded-lg p-2 ">Target Populations</h2>
-              <p class="text-sm font-medium tracking-wide  text-black py-4 ">        
-                We focus on rural communities with limited access to healthcare services, marginalized populations, and
-                regions prone to zoonotic diseases.
-              </p>
-              <div class=" flex justify-center items-center " >
-                <img src="assets/images/targetPP.jpg" width="400" alt="Photo is loading" class=" rounded-3xl items-center justify-center " >
-              </div>
-             
-             
-            </div>
-            <div class="flex flex-col gap-1">
-              <h2 class="text-2xl uppercase font-bold  bg-white rounded-lg p-2 ">Geographic Focus</h2>
-              <p class="text-sm font-medium tracking-wide text-black text-black py-4 ">
-                Our interventions are primarily implemented in Sub-Saharan Africa, Southeast Asia, and South America,
-                targeting areas with high biodiversity and ecological significance.
-              </p>
-              <div class=" flex justify-center items-center " >
-                <img src="assets/images/subharan.jpg" width="350" alt="Photo is loading" class=" rounded-3xl items-center justify-center " >
-              </div>
-              <p class="text-black text-gray-200"> </p>
-            </div>
-          </div>
-          <!-- first end here -->
+  <!-- Stats Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 stats-grid">
+        <!-- Stat 1 -->
+        <div class="stat-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
+          <div class="stat-number text-4xl font-bold text-blue-600 mb-2">50+</div>
+          <p class="text-gray-600">Active Programs</p>
+        </div>
+        <!-- Stat 2 -->
+        <div class="stat-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
+          <div class="stat-number text-4xl font-bold text-blue-600 mb-2">1000+</div>
+          <p class="text-gray-600">Students Trained</p>
+        </div>
+        <!-- Stat 3 -->
+        <div class="stat-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
+          <div class="stat-number text-4xl font-bold text-blue-600 mb-2">25+</div>
+          <p class="text-gray-600">Partner Organizations</p>
+        </div>
+        <!-- Stat 4 -->
+        <div class="stat-card bg-white rounded-lg p-6 text-center slide-up-delay-2">
+          <div class="stat-number text-4xl font-bold text-blue-600 mb-2">95%</div>
+          <p class="text-gray-600">Success Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-          <!-- second -->
-          <div class="grid gap-6 md:grid-cols-2 " >
-            <div class="flex flex-col gap-1">
-              <h2 class="text-2xl font-bold uppercase  bg-white rounded-lg p-2 ">Key Activities</h2>
-              <p class="text-sm font-medium tracking-wide text-black py-4 ">        
-                Our programs include community health education, vaccination campaigns, One Health training for local
-                healthcare workers, and collaborative research on zoonotic diseases. We also emphasize sustainable livestock
-                management and environmental conservation.
-              </p>
-              <div class=" flex justify-center items-center " >
-                <img src="assets/images/one-healthy.jpg" width="600" alt="Photo is loading" class=" rounded-3xl items-center justify-center " >
+  <!-- Programs Grid -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 slide-up">Featured Programs</h2>
+      <div class="grid md:grid-cols-3 gap-8 program-grid">
+        <!-- Program 1 -->
+        <div class="program-card bg-white rounded-lg overflow-hidden shadow-lg slide-up-delay-1">
+          <div class="program-image">
+            <img src="assets/images/program1.jpg" alt="Healthcare Education" class="w-full h-48 object-cover">
+            <div class="program-overlay absolute inset-0 p-6 flex items-end">
+              <div class="text-white">
+                <h3 class="text-xl font-semibold mb-2">Healthcare Education</h3>
+                <p class="text-sm opacity-90">Comprehensive training for healthcare professionals</p>
               </div>
-             
-            </div>
-            <div class="flex flex-col gap-1">
-              <h2 class="text-2xl uppercase font-bold bg-white rounded-lg p-2 ">Impact and Outcomes</h2>
-              <p class="text-sm font-medium tracking-wide  text-black  py-4  ">
-                Our interventions have led to a significant reduction in the incidence of zoonotic diseases, improved access
-                to healthcare services, and enhanced awareness of One Health principles among local communities. We have seen
-                a decline in malnutrition rates and better livelihoods for smallholder farmers.
-              </p>
-              <div class=" flex justify-center items-center " >
-                <img src="assets/images/zoonotic.png" width="530" alt="Photo is loading" class=" rounded-3xl  items-center justify-center " >
-              </div>
-              <p class="text-black text-gray-200"> </p>
             </div>
           </div>
-          <!-- second end here -->
+          <div class="p-6">
+            <ul class="space-y-3">
+              <li class="list-item flex items-center text-gray-600">
+                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Advanced Medical Training
+              </li>
+              <li class="list-item flex items-center text-gray-600">
+                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Practical Workshops
+              </li>
+              <li class="list-item flex items-center text-gray-600">
+                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Certification Programs
+              </li>
+            </ul>
+            <a href="/programs/healthcare-education" class="btn mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700">
+              Learn More
+            </a>
+          </div>
+        </div>
 
-
-
-
-          <!-- Third -->
-          <div class="grid gap-6 md:grid-cols-2 pb-16 " >
-            <div class="flex flex-col gap-1">
-              <h2 class="text-2xl font-bold uppercase  bg-white rounded-lg p-2  ">Collaboration and Partnerships</h2>
-              <p class="text-sm font-medium tracking-wide text-black py-4 ">        
-                We collaborate with local NGOs, government health agencies, academic institutions, and international
-                organizations to implement our programs. These partnerships enable us to leverage resources, share expertise,
-                and ensure the sustainability of our initiatives.
-              </p>
-
-              <div class=" flex justify-center items-center " >
-                <img src="assets/images/collaboration.webp" width="530" alt="Photo is loading" class=" rounded-3xl items-center justify-center " >
+        <!-- Program 2 -->
+        <div class="program-card bg-white rounded-lg overflow-hidden shadow-lg slide-up-delay-1">
+          <div class="program-image">
+            <img src="assets/images/program2.jpg" alt="Research Initiatives" class="w-full h-48 object-cover">
+            <div class="program-overlay absolute inset-0 p-6 flex items-end">
+              <div class="text-white">
+                <h3 class="text-xl font-semibold mb-2">Research Initiatives</h3>
+                <p class="text-sm opacity-90">Advancing healthcare through innovative research</p>
               </div>
-             
-            </div>
-            <div class="flex flex-col gap-1 md:pb-16 pb-16 ">
-              <h2 class="text-2xl uppercase font-bold bg-white rounded-lg p-2  ">Call to Action</h2>
-              <p class="text-sm font-medium tracking-wide text-black py-4 md:mb-4 ">
-                Join us in promoting One Health! You can support our work by volunteering, donating, or advocating for
-                integrated approaches to health. Together, we can make a difference in the lives of people, animals, and the
-                planet.
-              </p>
-
-              <div class=" flex justify-center items-center " >
-                <img src="assets/images/action.png" width="600" alt="Photo is loading" class=" rounded-3xl items-center justify-center  " >
-              </div>
-
-              <p class="text-black text-gray-200"> </p>
             </div>
           </div>
-          <!-- Third end here -->
+          <div class="p-6">
+            <ul class="space-y-3">
+              <li class="list-item flex items-center text-gray-600">
+                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Clinical Studies
+              </li>
+              <li class="list-item flex items-center text-gray-600">
+                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Data Analysis
+              </li>
+              <li class="list-item flex items-center text-gray-600">
+                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Publication Support
+              </li>
+            </ul>
+            <a href="/programs/research" class="btn mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700">
+              Learn More
+            </a>
+          </div>
+        </div>
 
+        <!-- Program 3 -->
+        <div class="program-card bg-white rounded-lg overflow-hidden shadow-lg slide-up-delay-2">
+          <div class="program-image">
+            <img src="assets/images/program3.jpg" alt="Community Outreach" class="w-full h-48 object-cover">
+            <div class="program-overlay absolute inset-0 p-6 flex items-end">
+              <div class="text-white">
+                <h3 class="text-xl font-semibold mb-2">Community Outreach</h3>
+                <p class="text-sm opacity-90">Building stronger, healthier communities</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-3">
+              <li class="list-item flex items-center text-gray-600">
+                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Health Camps
+              </li>
+              <li class="list-item flex items-center text-gray-600">
+                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Awareness Programs
+              </li>
+              <li class="list-item flex items-center text-gray-600">
+                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Community Support
+              </li>
+            </ul>
+            <a href="/programs/community" class="btn mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Focus Areas -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 slide-up">Our Focus Areas</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Focus Area 1 -->
+        <div class="focus-area-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
+          <div class="focus-area-icon w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Education</h3>
+          <p class="text-gray-600">Comprehensive healthcare training and development</p>
+        </div>
 
-  </div>
+        <!-- Focus Area 2 -->
+        <div class="focus-area-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
+          <div class="focus-area-icon w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Research</h3>
+          <p class="text-gray-600">Advancing medical knowledge through studies</p>
+        </div>
+
+        <!-- Focus Area 3 -->
+        <div class="focus-area-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
+          <div class="focus-area-icon w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Community</h3>
+          <p class="text-gray-600">Engaging with and supporting local communities</p>
+        </div>
+
+        <!-- Focus Area 4 -->
+        <div class="focus-area-card bg-white rounded-lg p-6 text-center slide-up-delay-2">
+          <div class="focus-area-icon w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+          <p class="text-gray-600">Developing new approaches to healthcare</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-16  bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 slide-up">Ready to Make a Difference?</h2>
+      <p class="text-gray-600 mb-8 max-w-2xl md:text-center mx-auto slide-up-delay-1">
+        Join our programs and be part of the healthcare transformation. Together, we can create a healthier future.
+      </p>
+      <a href="/contact" class="btn inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 slide-up-delay-2">
+        Get Started Today
+      </a>
+    </div>
+  </section>
+</div>

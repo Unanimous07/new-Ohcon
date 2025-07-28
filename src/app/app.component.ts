@@ -1,28 +1,21 @@
-import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, NgClass],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isOpen = false;
-  title = 'Ohcoma';
-  isNavOpen: boolean = false;
-  fillColor: string = '#00d9ff'; // or any other color valu
-
-  logo = "assets/images/logo.png"
+  logo: string = 'assets/images/logo.png';
+  isNavOpen = false;
 
   toggleNav() {
     this.isNavOpen = !this.isNavOpen;
+    // Prevent body scroll when mobile menu is open
+    document.body.style.overflow = this.isNavOpen ? 'hidden' : '';
   }
-
-  toggleDropdown() {
-    this.isOpen = !this.isOpen;
-  }
-
 }
