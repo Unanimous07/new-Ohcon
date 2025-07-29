@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { ScrollAnimationDirective } from '../../shared/directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, ScrollAnimationDirective],
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.css']
 })
@@ -13,27 +14,19 @@ export class AboutUsComponent {
   teamMembers = [
     {
       name: 'Master Zambezi',
-      role: 'Founder',
-      image: 'assets/images/team/master.jpg',
-      bio: 'Leading OHCON\'s initiatives with a passion for public health and community well-being.',
-      location: 'Lilongwe, Bunda',
+      role: 'Founder & Executive Director',
+      image: 'assets/images/master.jpg',
+      bio: 'Leading our organization with over 3 years of healthcare experience and a passion for community health improvement.',
+      location: 'Lilongwe, Malawi',
       email: 'masterzambezi@gmail.com'
     },
     {
       name: 'Kelvin Mulera',
-      role: 'Publications Director',
-      image: 'assets/images/team/kelvin.jpg',
-      bio: 'Overseeing OHCON\'s publications with expertise in scientific research and communication.',
-      location: 'Lilongwe, Bunda',
+      role: 'Co-Founder & Publications Director',
+      image: 'assets/images/kelvin.jpg',
+      bio: 'Developing and implementing innovative healthcare programs with expertise in scientific research and communication.',
+      location: 'Lilongwe, Malawi',
       email: 'kelvin@renai-labs.com'
-    },
-    {
-      name: 'Lauren Mbewe',
-      role: 'Vet Expert',
-      image: 'assets/images/team/lauren.jpg',
-      bio: 'Providing veterinary expertise to OHCON\'s initiatives, promoting animal health and welfare.',
-      location: 'Lilongwe, Bunda',
-      email: 'laurenmbewe@gmail.com'
     }
   ];
 

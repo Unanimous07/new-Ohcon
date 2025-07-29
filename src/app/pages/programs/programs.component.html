@@ -1,158 +1,116 @@
 <!-- Programs Page -->
 <div class="bg-gray-50 min-h-screen">
   <!-- Hero Section -->
-  <section class="hero-section py-20 text-white relative">
+  <section class="relative py-24 md:py-32 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
+    <div class="absolute inset-0 bg-black/30"></div>
     <div class="container mx-auto px-4 relative z-10">
-      <div class="max-w-3xl mx-auto text-center slide-up">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Programs</h1>
-        <p class="text-xl opacity-90">Transforming healthcare through education, research, and community engagement.</p>
+      <div class="max-w-3xl mx-auto text-center motion-safe:animate-fade-in-up">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">
+          Our Programs
+        </h1>
+        <p class="text-lg sm:text-xl md:text-xl text-white/90 font-light max-w-3xl mx-auto leading-relaxed text-center">
+          Transforming healthcare through education, research, and community engagement.
+        </p>
       </div>
     </div>
   </section>
 
+
+
   <!-- Stats Section -->
-  <section class="py-16 bg-white">
+  <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-8 stats-grid">
+      <div class="grid md:grid-cols-4 gap-8">
         <!-- Stat 1 -->
-        <div class="stat-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
-          <div class="stat-number text-4xl font-bold text-blue-600 mb-2">50+</div>
-          <p class="text-gray-600">Active Programs</p>
+        <div class="transform hover:scale-105 transition-all duration-300 bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl motion-safe:animate-fade-in-up">
+          <div class="text-4xl sm:text-5xl font-bold text-blue-600 mb-2">2+</div>
+          <p class="text-gray-600 text-lg">Active Programs</p>
         </div>
         <!-- Stat 2 -->
-        <div class="stat-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
-          <div class="stat-number text-4xl font-bold text-blue-600 mb-2">1000+</div>
-          <p class="text-gray-600">Students Trained</p>
+        <div class="transform hover:scale-105 transition-all duration-300 bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl motion-safe:animate-fade-in-up motion-safe:animation-delay-200">
+          <div class="text-4xl sm:text-5xl font-bold text-blue-600 mb-2">10+</div>
+          <p class="text-gray-600 text-lg">Students Trained</p>
         </div>
         <!-- Stat 3 -->
-        <div class="stat-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
-          <div class="stat-number text-4xl font-bold text-blue-600 mb-2">25+</div>
-          <p class="text-gray-600">Partner Organizations</p>
+        <div class="transform hover:scale-105 transition-all duration-300 bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl motion-safe:animate-fade-in-up motion-safe:animation-delay-300">
+          <div class="text-4xl sm:text-5xl font-bold text-blue-600 mb-2">0+</div>
+          <p class="text-gray-600 text-lg">Partner Organizations</p>
         </div>
         <!-- Stat 4 -->
-        <div class="stat-card bg-white rounded-lg p-6 text-center slide-up-delay-2">
-          <div class="stat-number text-4xl font-bold text-blue-600 mb-2">95%</div>
-          <p class="text-gray-600">Success Rate</p>
+        <div class="transform hover:scale-105 transition-all duration-300 bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl motion-safe:animate-fade-in-up motion-safe:animation-delay-400">
+          <div class="text-4xl sm:text-5xl font-bold text-blue-600 mb-2">95%</div>
+          <p class="text-gray-600 text-lg">Success Rate</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Programs Grid -->
-  <section class="py-16 bg-gray-50">
+  <section class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12 slide-up">Featured Programs</h2>
-      <div class="grid md:grid-cols-3 gap-8 program-grid">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 motion-safe:animate-fade-in-up">
+        Featured Programs
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
         <!-- Program 1 -->
-        <div class="program-card bg-white rounded-lg overflow-hidden shadow-lg slide-up-delay-1">
-          <div class="program-image">
-            <img src="assets/images/program1.jpg" alt="Healthcare Education" class="w-full h-48 object-cover">
-            <div class="program-overlay absolute inset-0 p-6 flex items-end">
-              <div class="text-white">
-                <h3 class="text-xl font-semibold mb-2">Healthcare Education</h3>
-                <p class="text-sm opacity-90">Comprehensive training for healthcare professionals</p>
-              </div>
+        <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 motion-safe:animate-fade-in-up motion-safe:animation-delay-200">
+          <div class="relative">
+            <img src="assets/images/programs_1.jpg" alt="Healthcare Education" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-xl sm:text-2xl font-semibold text-white mb-2">Healthcare Education</h3>
+              <p class="text-white/90">Training the next generation of healthcare professionals</p>
             </div>
           </div>
           <div class="p-6">
-            <ul class="space-y-3">
-              <li class="list-item flex items-center text-gray-600">
-                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Advanced Medical Training
-              </li>
-              <li class="list-item flex items-center text-gray-600">
-                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Practical Workshops
-              </li>
-              <li class="list-item flex items-center text-gray-600">
-                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Certification Programs
-              </li>
-            </ul>
-            <a href="/programs/healthcare-education" class="btn mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700">
+            <p class="text-gray-600 mb-4">Our comprehensive healthcare education program focuses on developing skilled professionals through hands-on training and mentorship.</p>
+            <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
               Learn More
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
             </a>
           </div>
         </div>
 
         <!-- Program 2 -->
-        <div class="program-card bg-white rounded-lg overflow-hidden shadow-lg slide-up-delay-1">
-          <div class="program-image">
-            <img src="assets/images/program2.jpg" alt="Research Initiatives" class="w-full h-48 object-cover">
-            <div class="program-overlay absolute inset-0 p-6 flex items-end">
-              <div class="text-white">
-                <h3 class="text-xl font-semibold mb-2">Research Initiatives</h3>
-                <p class="text-sm opacity-90">Advancing healthcare through innovative research</p>
-              </div>
+        <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 motion-safe:animate-fade-in-up motion-safe:animation-delay-300">
+          <div class="relative">
+            <img src="assets/images/res.jpeg" alt="Research Initiatives" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-xl sm:text-2xl font-semibold text-white mb-2">Research Initiatives</h3>
+              <p class="text-white/90">Advancing healthcare through innovative research</p>
             </div>
           </div>
           <div class="p-6">
-            <ul class="space-y-3">
-              <li class="list-item flex items-center text-gray-600">
-                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Clinical Studies
-              </li>
-              <li class="list-item flex items-center text-gray-600">
-                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Data Analysis
-              </li>
-              <li class="list-item flex items-center text-gray-600">
-                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Publication Support
-              </li>
-            </ul>
-            <a href="/programs/research" class="btn mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700">
+            <p class="text-gray-600 mb-4">Our research programs focus on finding innovative solutions to pressing healthcare challenges in Malawi and beyond.</p>
+            <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
               Learn More
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
             </a>
           </div>
         </div>
 
         <!-- Program 3 -->
-        <div class="program-card bg-white rounded-lg overflow-hidden shadow-lg slide-up-delay-2">
-          <div class="program-image">
-            <img src="assets/images/program3.jpg" alt="Community Outreach" class="w-full h-48 object-cover">
-            <div class="program-overlay absolute inset-0 p-6 flex items-end">
-              <div class="text-white">
-                <h3 class="text-xl font-semibold mb-2">Community Outreach</h3>
-                <p class="text-sm opacity-90">Building stronger, healthier communities</p>
-              </div>
+        <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 motion-safe:animate-fade-in-up motion-safe:animation-delay-400">
+          <div class="relative">
+            <img src="assets/images/com.png" alt="Community Outreach" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-xl sm:text-2xl font-semibold text-white mb-2">Community Outreach</h3>
+              <p class="text-white/90">Empowering communities through health education</p>
             </div>
           </div>
           <div class="p-6">
-            <ul class="space-y-3">
-              <li class="list-item flex items-center text-gray-600">
-                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Health Camps
-              </li>
-              <li class="list-item flex items-center text-gray-600">
-                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Awareness Programs
-              </li>
-              <li class="list-item flex items-center text-gray-600">
-                <svg class="list-icon w-5 h-5 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Community Support
-              </li>
-            </ul>
-            <a href="/programs/community" class="btn mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700">
+            <p class="text-gray-600 mb-4">We work directly with communities to promote health awareness, preventive care, and sustainable healthcare practices.</p>
+            <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
               Learn More
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -161,67 +119,90 @@
   </section>
 
   <!-- Focus Areas -->
-  <section class="py-16 bg-white">
+  <section class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12 slide-up">Our Focus Areas</h2>
-      <div class="grid md:grid-cols-4 gap-8">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16 motion-safe:animate-fade-in-up">
+        Our Focus Areas
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Focus Area 1 -->
-        <div class="focus-area-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
-          <div class="focus-area-icon w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-gray-50 motion-safe:animate-fade-in-up motion-safe:animation-delay-200">
+          <div class="flex-shrink-0">
             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3">Education</h3>
-          <p class="text-gray-600">Comprehensive healthcare training and development</p>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Education & Training</h3>
+            <p class="text-gray-600">Providing comprehensive healthcare education and professional development opportunities.</p>
+          </div>
         </div>
 
         <!-- Focus Area 2 -->
-        <div class="focus-area-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
-          <div class="focus-area-icon w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-gray-50 motion-safe:animate-fade-in-up motion-safe:animation-delay-300">
+          <div class="flex-shrink-0">
             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3">Research</h3>
-          <p class="text-gray-600">Advancing medical knowledge through studies</p>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Research & Innovation</h3>
+            <p class="text-gray-600">Conducting cutting-edge research to improve healthcare outcomes in Malawi.</p>
+          </div>
         </div>
 
         <!-- Focus Area 3 -->
-        <div class="focus-area-card bg-white rounded-lg p-6 text-center slide-up-delay-1">
-          <div class="focus-area-icon w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-gray-50 motion-safe:animate-fade-in-up motion-safe:animation-delay-400">
+          <div class="flex-shrink-0">
             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3">Community</h3>
-          <p class="text-gray-600">Engaging with and supporting local communities</p>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Community Health</h3>
+            <p class="text-gray-600">Engaging with communities to promote better health outcomes and practices.</p>
+          </div>
         </div>
 
         <!-- Focus Area 4 -->
-        <div class="focus-area-card bg-white rounded-lg p-6 text-center slide-up-delay-2">
-          <div class="focus-area-icon w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-gray-50 motion-safe:animate-fade-in-up motion-safe:animation-delay-500">
+          <div class="flex-shrink-0">
             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3">Innovation</h3>
-          <p class="text-gray-600">Developing new approaches to healthcare</p>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Global Partnerships</h3>
+            <p class="text-gray-600">Building international collaborations to strengthen healthcare systems.</p>
+          </div>
+        </div>
+
+        <!-- Focus Area 5 -->
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-gray-50 motion-safe:animate-fade-in-up motion-safe:animation-delay-600">
+          <div class="flex-shrink-0">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Policy & Advocacy</h3>
+            <p class="text-gray-600">Advocating for improved healthcare policies and systems at national level.</p>
+          </div>
+        </div>
+
+        <!-- Focus Area 6 -->
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-gray-50 motion-safe:animate-fade-in-up motion-safe:animation-delay-700">
+          <div class="flex-shrink-0">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Capacity Building</h3>
+            <p class="text-gray-600">Strengthening healthcare infrastructure and professional capabilities.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="py-16  bg-gray-50">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6 slide-up">Ready to Make a Difference?</h2>
-      <p class="text-gray-600 mb-8 max-w-2xl md:text-center mx-auto slide-up-delay-1">
-        Join our programs and be part of the healthcare transformation. Together, we can create a healthier future.
-      </p>
-      <a href="/contact" class="btn inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 slide-up-delay-2">
-        Get Started Today
-      </a>
     </div>
   </section>
 </div>

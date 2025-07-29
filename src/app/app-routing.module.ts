@@ -9,7 +9,7 @@ import { GetInvolvedComponent } from './pages/get-involved/get-involved.componen
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'aboutUs', component: AboutUsComponent },
+  { path: 'about-us', component: AboutUsComponent },
   { path: 'programs', component: ProgramsComponent },
   { path: 'news', component: NewsComponent },
   { path: 'resources', component: ResourcesComponent },

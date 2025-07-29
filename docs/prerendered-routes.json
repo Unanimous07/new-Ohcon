@@ -1,8 +1,8 @@
 {
   "routes": [
     "/404",
-    "/aboutUs",
-    "/contactUs",
+    "/about-us",
+    "/contact-us",
     "/get-involved",
     "/home",
     "/news",

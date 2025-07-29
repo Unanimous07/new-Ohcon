@@ -1,7 +1,9 @@
-import { Directive, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit, OnDestroy, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Directive({
-  selector: '[scrollAnimation]'
+  selector: '[scrollAnimation]',
+  standalone: true
 })
 export class ScrollAnimationDirective implements OnInit, OnDestroy {
   @Input() animationClass: string = 'animate-fade-in';
@@ -10,9 +12,17 @@ export class ScrollAnimationDirective implements OnInit, OnDestroy {
 
   private observer: IntersectionObserver | null = null;
 
-  constructor(private element: ElementRef) {}
+  constructor(
+    private element: ElementRef,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngOnInit() {
+    // Only run in browser environment
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
     // Set initial styles
     this.element.nativeElement.style.opacity = '0';
     this.element.nativeElement.style.animationFillMode = 'forwards';

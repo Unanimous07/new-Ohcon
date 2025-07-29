@@ -1,7 +1,47 @@
+/* Base Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.motion-safe\:animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.motion-safe\:animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.motion-safe\:animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.motion-safe\:animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.motion-safe\:animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.motion-safe\:animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+.motion-safe\:animation-delay-700 {
+  animation-delay: 700ms;
+}
+
 /* Hero Section */
 .hero-section {
   position: relative;
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  overflow: hidden;
 }
 
 .hero-section::before {
@@ -66,11 +106,13 @@
   color: #2563eb;
 }
 
-/* Stat Card Styles */
+/* Stats Section */
 .stat-card {
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
 }
 
 .stat-card::after {
@@ -99,14 +141,31 @@
   color: #2563eb;
 }
 
-/* Focus Area Card */
+/* Program Cards */
+.program-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.program-image img {
+  transition: transform 0.5s ease;
+}
+
+/* Focus Areas */
 .focus-area-card {
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .focus-area-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-5px);
 }
 
 .focus-area-icon {
@@ -164,6 +223,61 @@
 .slide-up-delay-2 {
   animation: slideUp 0.6s ease-out 0.4s forwards;
   opacity: 0;
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.25rem;
+  }
 }
 
 /* Responsive Adjustments */

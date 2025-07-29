@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-import{O as o,Wa as a,Xa as i,db as r,kb as s}from"./chunk-DNQI3XHO.mjs";import"./chunk-VVCT4QZE.mjs";var d=(()=>{let t=class t{};t.\u0275fac=function(n){return new(n||t)},t.\u0275cmp=o({type:t,selectors:[["app-contact-us"]],standalone:!0,features:[s],decls:2,vars:0,template:function(n,p){n&1&&(a(0,"p"),r(1,"contact-us works!"),i())}});let e=t;return e})();export{d as ContactUsComponent};
