@@ -181,57 +181,141 @@
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
-        <!-- Team Member 1 -->
+        <!-- Team Member Cards: Updated and Modern -->
         <div class="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-             scrollAnimation
-             animationClass="animate-slide-in-left"
-             animationDelay="400ms">
-          <div class="relative">
-            <img src="assets/images/master.jpg" alt="Master Zambezi" class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+             scrollAnimation animationClass="animate-slide-in-left" animationDelay="100ms">
+          <div class="relative team-member-image">
+            <img src="assets/images/team/Master Zambezi.jpg" alt="Master Zambezi" class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="team-member-overlay"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
               <h3 class="text-lg sm:text-xl font-semibold text-white mb-1">Master Zambezi</h3>
-              <p class="text-white/90 text-xs sm:text-sm">Founder & Executive Director</p>
+              <p class="text-white/90 text-xs sm:text-sm">Executive Director</p>
             </div>
           </div>
           <div class="p-4 sm:p-6">
-            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Leading our organization with over 3 years of healthcare experience and a passion for community health improvement.</p>
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Leading OHCON with vision, integrity, and a commitment to One Health for all.</p>
             <div class="flex items-center justify-between">
               <span class="text-xs sm:text-sm text-gray-500">Lilongwe, Malawi</span>
-              <button (click)="contactTeamMember('masterzambezi@ohconmw.org')" 
-                      class="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium">
-                Contact
-              </button>
+              <button (click)="contactTeamMember('masterzambezi@ohconmw.org')" class="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium">Contact</button>
             </div>
           </div>
         </div>
 
-        <!-- Team Member 2 -->
         <div class="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-             scrollAnimation
-             animationClass="animate-slide-in-left"
-             animationDelay="600ms">
-          <div class="relative">
-            <img src="assets/images/kelvin.jpg" alt="Kelvin Mulera" class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+             scrollAnimation animationClass="animate-slide-in-left" animationDelay="200ms">
+          <div class="relative team-member-image">
+            <img src="assets/images/team/Owen Kulapani.jpg" alt="Owen Kulapani" class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="team-member-overlay"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-semibold text-white mb-1">Owen Kulapani</h3>
+              <p class="text-white/90 text-xs sm:text-sm">Finance & Administration Officer</p>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6">
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Ensuring financial transparency and smooth operations at OHCON.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs sm:text-sm text-gray-500">Blantyre, Malawi</span>
+              <button (click)="contactTeamMember('owen@ohconmw.org')" class="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium">Contact</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+             scrollAnimation animationClass="animate-slide-in-left" animationDelay="300ms">
+          <div class="relative team-member-image">
+            <img src="assets/images/team/Zichitina Msekandiana.jpg" alt="Zichitina Agness Msekandiana" class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="team-member-overlay"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-semibold text-white mb-1">Zichitina Agness Msekandiana</h3>
+              <p class="text-white/90 text-xs sm:text-sm">Program Manager</p>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6">
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Driving impactful programs and partnerships for community health.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs sm:text-sm text-gray-500">Mzuzu, Malawi</span>
+              <button (click)="contactTeamMember('zichitina@ohconmw.org')" class="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium">Contact</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+             scrollAnimation animationClass="animate-slide-in-left" animationDelay="400ms">
+          <div class="relative team-member-image">
+            <img src="assets/images/team/Rudo Pirigu.jpg" alt="Rudo Pirigu" class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="team-member-overlay"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-semibold text-white mb-1">Rudo Pirigu</h3>
+              <p class="text-white/90 text-xs sm:text-sm">Program Manager (M&E)</p>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6">
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Monitoring and evaluating our programs for maximum impact.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs sm:text-sm text-gray-500">Zomba, Malawi</span>
+              <button (click)="contactTeamMember('rudo@ohconmw.org')" class="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium">Contact</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+             scrollAnimation animationClass="animate-slide-in-left" animationDelay="500ms">
+          <div class="relative team-member-image">
+            <img src="assets/images/team/Kelvin Mulera.jpg" alt="Kelvin Mulera" class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="team-member-overlay"></div>
             <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
               <h3 class="text-lg sm:text-xl font-semibold text-white mb-1">Kelvin Mulera</h3>
-              <p class="text-white/90 text-xs sm:text-sm">Co-Founder & Publications Director</p>
+              <p class="text-white/90 text-xs sm:text-sm">Communications & Community Engagement Officer</p>
             </div>
           </div>
           <div class="p-4 sm:p-6">
-            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Developing and implementing innovative healthcare programs with expertise in scientific research and communication.</p>
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Connecting OHCON with communities and sharing our story.</p>
             <div class="flex items-center justify-between">
               <span class="text-xs sm:text-sm text-gray-500">Lilongwe, Malawi</span>
-              <button (click)="contactTeamMember('kelvin@ohconmw.org')" 
-                      class="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium">
-                Contact
-              </button>
+              <button (click)="contactTeamMember('kelvin@ohconmw.org')" class="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium">Contact</button>
             </div>
           </div>
         </div>
 
-        <!-- Join Our Team Card -->
+        <div class="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+             scrollAnimation animationClass="animate-slide-in-left" animationDelay="600ms">
+          <div class="relative team-member-image">
+            <img src="assets/images/team/Yamikani Hara.jpg" alt="Yamikani Hara" class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="team-member-overlay"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-semibold text-white mb-1">Yamikani Hara</h3>
+              <p class="text-white/90 text-xs sm:text-sm">WASH</p>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6">
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Championing water, sanitation, and hygiene initiatives for healthier communities.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs sm:text-sm text-gray-500">Kasungu, Malawi</span>
+              <button (click)="contactTeamMember('yamikani@ohconmw.org')" class="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium">Contact</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+             scrollAnimation animationClass="animate-slide-in-left" animationDelay="700ms">
+          <div class="relative team-member-image">
+            <img src="assets/images/team/Connis Chitsulo.jpg" alt="Connis Chitsulo" class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="team-member-overlay"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-semibold text-white mb-1">Connis Chitsulo</h3>
+              <p class="text-white/90 text-xs sm:text-sm">Field Coordinator</p>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6">
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Coordinating field activities and supporting our team on the ground.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs sm:text-sm text-gray-500">Mangochi, Malawi</span>
+              <button (click)="contactTeamMember('connis@ohconmw.org')" class="text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium">Contact</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Join Our Team Card (kept as requested) -->
         <div class="group bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 md:col-span-2 xl:col-span-1"
              scrollAnimation
              animationClass="animate-slide-in-left"
