@@ -1,0 +1,7 @@
+/* Rotating text with smooth transitions */
+.rotating-text {
+  min-width: 180px; /* Fixed width to prevent layout shifts */
+  display: inline-block;
+  text-align: left;
+  transition: opacity 0.5s ease-in-out;
+}

@@ -1,50 +1,53 @@
 <!-- Enhanced Navigation -->
 <nav class="fixed top-0 w-full bg-black/95 backdrop-blur-sm z-50 shadow-lg">
-  <div class="container mx-auto px-4">
-    <div class="flex justify-between items-center h-20">
+  <div class="container mx-auto px-2 md:px-3 lg:px-4 xl:px-6">
+    <div class="flex justify-between items-center h-16 md:h-18 lg:h-20">
       <!-- Logo -->
-      <a class="flex items-center group" [routerLink]="''">
-        <img [src]="logo" class="h-14 w-auto transform group-hover:scale-105 transition-transform duration-300" alt="OHCON Logo">
+      <a class="flex items-center group flex-shrink-0" [routerLink]="''">
+        <img [src]="logo" class="h-10 md:h-12 lg:h-14 xl:h-16 w-auto transform group-hover:scale-105 transition-transform duration-300" alt="OHCON Logo">
       </a>
 
       <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center space-x-8">
-        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2" [routerLink]="''" routerLinkActive="text-blue-400" [routerLinkActiveOptions]="{exact: true}">
+      <div class="hidden md:flex items-center space-x-2 md:space-x-3 lg:space-x-6 xl:space-x-8">
+        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2 px-1 md:px-2 text-xs md:text-sm lg:text-base whitespace-nowrap" [routerLink]="''" routerLinkActive="text-blue-400" [routerLinkActiveOptions]="{exact: true}">
           Home
           <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </a>
-        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2" [routerLink]="'/programs'" routerLinkActive="text-blue-400">
+        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2 px-1 md:px-2 text-xs md:text-sm lg:text-base whitespace-nowrap" [routerLink]="'/programs'" routerLinkActive="text-blue-400">
           Programs
           <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </a>
-        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2" [routerLink]="'/news'" routerLinkActive="text-blue-400">
+        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2 px-1 md:px-2 text-xs md:text-sm lg:text-base whitespace-nowrap" [routerLink]="'/news'" routerLinkActive="text-blue-400">
           News
           <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </a>
-        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2" [routerLink]="'/resources'" routerLinkActive="text-blue-400">
+        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2 px-1 md:px-2 text-xs md:text-sm lg:text-base whitespace-nowrap" [routerLink]="'/resources'" routerLinkActive="text-blue-400">
           Resources
           <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </a>
-        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2" [routerLink]="'/about-us'" routerLinkActive="text-blue-400">
-          About Us
+        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2 px-1 md:px-2 text-xs md:text-sm lg:text-base whitespace-nowrap" [routerLink]="'/about-us'" routerLinkActive="text-blue-400">
+          <span class="hidden lg:inline">About Us</span>
+          <span class="lg:hidden">About</span>
           <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </a>
-        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2" [routerLink]="'/contact-us'" routerLinkActive="text-blue-400">
-          Contact Us
+        <a class="relative text-white hover:text-blue-400 transition-colors duration-300 group py-2 px-1 md:px-2 text-xs md:text-sm lg:text-base whitespace-nowrap" [routerLink]="'/contact-us'" routerLinkActive="text-blue-400">
+          <span class="hidden lg:inline">Contact Us</span>
+          <span class="lg:hidden">Contact</span>
           <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </a>
-        <a class="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg" 
+        <a class="bg-blue-600 text-white px-2 py-1.5 md:px-3 md:py-2 lg:px-6 lg:py-2.5 xl:px-8 xl:py-3 rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg text-xs md:text-sm lg:text-base whitespace-nowrap font-medium" 
            [routerLink]="'/get-involved'">
-           Get Involved
+           <span class="hidden lg:inline">Get Involved</span>
+           <span class="lg:hidden">Join Us</span>
         </a>
       </div>
 
       <!-- Mobile Menu Button -->
-      <button class="md:hidden text-white p-2 rounded-lg hover:bg-gray-800 transition-colors duration-300" (click)="toggleNav()">
-        <svg *ngIf="!isNavOpen" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <button class="md:hidden text-white p-1.5 md:p-2 rounded-lg hover:bg-gray-800 transition-colors duration-300 flex-shrink-0" (click)="toggleNav()">
+        <svg *ngIf="!isNavOpen" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
-        <svg *ngIf="isNavOpen" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg *ngIf="isNavOpen" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
