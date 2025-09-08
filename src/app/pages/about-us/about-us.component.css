@@ -124,6 +124,50 @@
   opacity: 0;
 }
 
+/* Board Member Modal Styles */
+.modal-backdrop {
+  backdrop-filter: blur(4px);
+}
+
+.board-member-card {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.board-member-card:hover {
+  transform: translateY(-8px);
+}
+
+.board-member-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.board-member-image img {
+  transition: transform 0.5s ease;
+}
+
+.board-member-card:hover .board-member-image img {
+  transform: scale(1.05);
+}
+
+/* Modal Animation */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .team-grid {
@@ -132,5 +176,9 @@
   
   .values-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .board-members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }

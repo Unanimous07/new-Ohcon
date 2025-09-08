@@ -1,11 +1,11 @@
 <!-- Resources Page -->
-<div class="min-h-screen bg-gray-50">
+<div class="min-h-screen bg-gray-50 font-sans" style="font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 400;">
   <!-- Hero Section -->
-  <div class="hero-section relative py-20 text-white">
-    <div class="container relative z-10">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight text-center">One Health Resources</h1>
-        <p class="text-xl text-blue-100 mb-8 text-center">
+  <div class="relative py-32 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
+    <div class="container mx-auto px-4 lg:px-8 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+  <h1 class="heading-xl font-sans font-medium text-white mb-6">One Health Resources</h1>
+        <p class="text-body-lg text-white/90 mb-8">
           Access comprehensive educational materials and practical guides for implementing One Health approaches
         </p>
       </div>
@@ -13,15 +13,15 @@
   </div>
 
   <!-- Search Bar -->
-  <div class="container">
-    <div class="search-container">
+  <div class="container mx-auto px-4 my-16 lg:px-8">
+    <div class="bg-white rounded-2xl shadow-lg p-6 -mt-8 relative z-10 max-w-2xl mx-auto">
       <div class="relative">
         <input
           type="text"
           [(ngModel)]="searchQuery"
           (input)="onSearch($event)"
           placeholder="Search resources..."
-          class="search-input"
+          class="w-full px-6 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
           list="suggestions"
         />
         <datalist id="suggestions">
@@ -30,7 +30,7 @@
         <button
           *ngIf="searchQuery"
           (click)="clearFilters()"
-          class="clear-btn"
+          class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
           aria-label="Clear search"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -42,25 +42,29 @@
   </div>
 
   <!-- Main Content -->
-  <div class="container py-12">
+  <div class="container mx-auto px-4 lg:px-8 py-24 mt-24">
     <!-- Resource Categories -->
     <div class="grid md:grid-cols-3 gap-8 mb-16">
       <!-- Educational Materials -->
-      <div class="resource-card cursor-pointer" (click)="filterByCategory('educational')">
-        <div class="resource-icon bg-blue-500 p-12">
+  <div class="bg-white rounded-2xl p-8 mt-16 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer focus:outline-none focus:ring-4 focus:ring-blue-200" tabindex="0" (click)="filterByCategory('educational')">
+        <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-xl mb-6 mx-auto">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.168 18.477 18.582 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+        </div>
           <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
               d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
         </div>
-        <div class="p-8">
+        <div class="p-8 mt-20">
           <h2 class="text-2xl font-bold mb-4">Educational Materials</h2>
           <p class="text-gray-600 mb-6">Access a comprehensive collection of articles, research papers, and case studies.</p>
         </div>
       </div>
 
       <!-- Practical Guides -->
-      <div class="resource-card cursor-pointer" (click)="filterByCategory('practical')">
+  <div class="resource-card cursor-pointer focus:outline-none focus:ring-4 focus:ring-blue-200" tabindex="0" (click)="filterByCategory('practical')">
         <div class="resource-icon bg-green-500 p-12">
           <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
@@ -74,7 +78,7 @@
       </div>
 
       <!-- Training Resources -->
-      <div class="resource-card cursor-pointer" (click)="filterByCategory('training')">
+  <div class="resource-card cursor-pointer focus:outline-none focus:ring-4 focus:ring-blue-200" tabindex="0" (click)="filterByCategory('training')">
         <div class="resource-icon bg-purple-500 p-12">
           <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
@@ -96,7 +100,7 @@
           <h3 class="text-xl font-semibold mb-3">{{ resource.title }}</h3>
           <span class="type-badge bg-blue-100 text-blue-800 mb-4">{{ resource.type }}</span>
           <p class="text-gray-600 flex-grow">{{ resource.description }}</p>
-          <button class="btn btn-primary mt-6">
+          <button class="btn btn-primary mt-6 focus:outline-none focus:ring-4 focus:ring-blue-200">
             Learn More
             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -119,7 +123,7 @@
     <div class="mt-24 bg-white rounded-2xl shadow-lg p-12 text-center max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold mb-6">Need More Information?</h2>
       <p class="text-xl text-gray-600 mb-8">Contact our team for additional resources or specific inquiries.</p>
-      <button class="btn btn-primary text-lg">
+      <button class="btn btn-primary text-lg" (click)="navigateToContact()">
         Contact Us
         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -127,4 +131,3 @@
       </button>
     </div>
   </div>
-</div>

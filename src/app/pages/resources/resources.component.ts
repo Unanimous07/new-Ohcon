@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ScrollAnimationDirective } from '../../shared/directives/scroll-animation.directive';
 
 interface Resource {
@@ -60,8 +61,12 @@ export class ResourcesComponent {
     }
   ];
 
-  constructor() {
+  constructor(private router: Router) {
     this.filteredResources = this.resources;
+  }
+
+  navigateToContact(): void {
+    this.router.navigate(['/contact-us']);
   }
 
   onSearch(event: Event): void {

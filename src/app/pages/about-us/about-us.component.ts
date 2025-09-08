@@ -11,6 +11,56 @@ import { ScrollAnimationDirective } from '../../shared/directives/scroll-animati
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
+  selectedBoardMember: any = null;
+
+  boardMembers = [
+    {
+      name: 'Dr. Dagmar Mayer',
+      title: 'Dr. med. vet., GPCert(SAM), MRCVS',
+      role: 'Director of Malawi Operations',
+      organization: 'Worldwide Veterinary Service (WVS)',
+      image: 'assets/images/board/Dr Dagmar Mayer.jpg',
+      shortBio: 'Veterinary expert leading operations in Malawi',
+      fullBio: 'Dr. Dagmar Mayer, Dr. med. vet., GPCert(SAM), MRCVS is the Director of Malawi Operations at Worldwide Veterinary Service (WVS). She brings extensive expertise in veterinary medicine and animal health to advance One Health initiatives across Malawi.'
+    },
+    {
+      name: 'Dr. Collins Mitambo',
+      title: 'Head of Division',
+      role: 'AMR Coordinating Centre',
+      organization: 'Ministry of Health, Republic of Malawi',
+      image: 'assets/images/board/Dr Collins Mitambo.jpg',
+      shortBio: 'Leading antimicrobial resistance coordination',
+      fullBio: 'Dr Collins Mitambo is the Head of Division for Antimicrobial Resistance Coordinating Centre in the Ministry of Health, Republic of Malawi. He acts as a leader in strategically positioning the work of the AMR Division for animal, human, environment, aquaculture and plant health. He champions AMR leadership across multiple sectors.'
+    },
+    {
+      name: 'Dr. Vincent Mlotha',
+      title: 'Senior Lecturer & Deputy Head',
+      role: 'Department of Food Science',
+      organization: 'Lilongwe University of Agriculture and Natural Resources (LUANAR)',
+      image: 'assets/images/board/Dr Vincent Mlotha.jpg',
+      shortBio: 'Academic leader in food science and nutrition',
+      fullBio: 'Vincent is a visionary and dynamic academic leader with over 12 years of experience in higher education service delivery, project management, resource mobilization, and collaborative research capabilities. Currently serving as Senior Lecturer and Deputy Head of Department at LUANAR, he drives research agenda and coordinates postgraduate research while managing multi-country collaborative projects in food science and nutrition.'
+    },
+    {
+      name: 'Florence',
+      title: 'Board Member',
+      role: 'Strategic Advisor',
+      organization: 'OHCON',
+      image: 'assets/images/board/Florence.jpg',
+      shortBio: 'Strategic advisor and board member',
+      fullBio: 'Florence brings valuable expertise and strategic guidance to OHCON\'s board of directors, contributing to the organization\'s mission and vision.'
+    },
+    {
+      name: 'Tadala',
+      title: 'Board Member',
+      role: 'Strategic Advisor',
+      organization: 'OHCON',
+      image: 'assets/images/board/Tadala.jpg',
+      shortBio: 'Strategic advisor and board member',
+      fullBio: 'Tadala serves as a strategic advisor on OHCON\'s board, providing valuable insights and guidance for the organization\'s initiatives.'
+    }
+  ];
+
   teamMembers = [
     {
       name: 'Master Zambezi',
@@ -50,5 +100,13 @@ export class AboutUsComponent {
 
   contactTeamMember(email: string) {
     window.location.href = `mailto:${email}`;
+  }
+
+  openBoardMemberModal(member: any) {
+    this.selectedBoardMember = member;
+  }
+
+  closeBoardMemberModal() {
+    this.selectedBoardMember = null;
   }
 }
