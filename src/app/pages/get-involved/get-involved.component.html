@@ -1,14 +1,14 @@
 <!-- Get Involved Section -->
-<section class="w-full py-16 lg:py-24 bg-gray-50 font-sans" style="font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 400;">
+<section class="w-full py-16 lg:py-24 bg-gray-50">
   <div class="container mx-auto px-4 lg:px-8">
     <div class="max-w-4xl mx-auto">
       <!-- Header -->
       <div class="text-center mb-12">
-  <h1 class="heading-xl font-sans font-medium mb-6">
+        <h1 class="heading-xl mb-6">
           Get Involved
         </h1>
         <div class="max-w-6xl mx-auto">
-          <p class="text-lg text-gray-600">
+          <p class="text-body-lg text-gray-600">
             Join our mission to promote One Health initiatives. Your skills and dedication can make a real difference 
             in our community's health and well-being.
           </p>
@@ -21,8 +21,8 @@
           <!-- Section Header -->
           <div class="flex justify-between items-center mb-8">
             <div>
-              <h2 class="text-3xl font-sans font-medium text-gray-900 mb-2">Volunteer Opportunities</h2>
-              <p class="text-gray-600">Choose from various roles to contribute to our mission</p>
+              <h2 class="heading-md text-gray-900 mb-2">Volunteer Opportunities</h2>
+              <p class="text-body text-gray-600">Choose from various roles to contribute to our mission</p>
             </div>
             <button 
               (click)="toggleVolunteerForm()"
@@ -37,10 +37,10 @@
                    class="p-4 border border-gray-200 rounded-lg hover:border-blue-500 transition-all duration-300 hover:shadow-lg group">
                 <div class="flex justify-between items-start">
                   <div class="space-y-2">
-                    <h3 class="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                    <h3 class="heading-sm text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                       {{position.title}}
                     </h3>
-                    <p class="text-gray-600">{{position.description}}</p>
+                    <p class="text-body text-gray-600">{{position.description}}</p>
                   </div>
                   <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full whitespace-nowrap">
                     {{position.commitment}}
@@ -60,7 +60,7 @@
               <form [formGroup]="volunteerForm" (ngSubmit)="onSubmit()" class="space-y-6">
                 <!-- Personal Information -->
                 <div class="bg-gray-50 p-4 rounded-lg space-y-4">
-                  <h4 class="text-lg font-semibold text-gray-900">Personal Information</h4>
+                  <h4 class="heading-xs text-gray-900">Personal Information</h4>
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="space-y-2">
                       <label class="text-sm font-medium text-gray-700">Full Name</label>
@@ -113,7 +113,7 @@
 
                 <!-- Experience & Availability -->
                 <div class="bg-gray-50 p-4 rounded-lg space-y-4">
-                  <h4 class="text-lg font-semibold text-gray-900">Experience & Availability</h4>
+                  <h4 class="heading-xs text-gray-900">Experience & Availability</h4>
                   <div class="space-y-4">
                     <div class="space-y-2">
                       <label class="text-sm font-medium text-gray-700">Relevant Experience</label>

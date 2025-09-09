@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/home/home.component.css"],
+  "sourcesContent": ["/* Rotating text with smooth transitions */\r\n.rotating-text {\r\n  min-width: 180px; /* Fixed width to prevent layout shifts */\r\n  display: inline-block;\r\n  text-align: left;\r\n  transition: opacity 0.5s ease-in-out;\r\n}"],
+  "mappings": ";AACA,CAAC;AACC,aAAW;AACX,WAAS;AACT,cAAY;AACZ,cAAY,QAAQ,KAAK;AAC3B;",
+  "names": []
+}

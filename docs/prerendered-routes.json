@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/404",
+    "/about-us",
+    "/contact-us",
+    "/get-involved",
+    "/home",
+    "/news",
+    "/programs",
+    "/resources"
+  ]
+}

@@ -1,10 +1,10 @@
 <!-- Resources Page -->
-<div class="min-h-screen bg-gray-50 font-sans" style="font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 400;">
+<div class="min-h-screen bg-gray-50">
   <!-- Hero Section -->
   <div class="relative py-32 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
     <div class="container mx-auto px-4 lg:px-8 relative z-10">
       <div class="max-w-4xl mx-auto text-center">
-  <h1 class="heading-xl font-sans font-medium text-white mb-6">One Health Resources</h1>
+        <h1 class="heading-xl text-white mb-6">One Health Resources</h1>
         <p class="text-body-lg text-white/90 mb-8">
           Access comprehensive educational materials and practical guides for implementing One Health approaches
         </p>
@@ -58,8 +58,8 @@
           </svg>
         </div>
         <div class="p-8 mt-20">
-          <h2 class="text-2xl font-bold mb-4">Educational Materials</h2>
-          <p class="text-gray-600 mb-6">Access a comprehensive collection of articles, research papers, and case studies.</p>
+          <h2 class="heading-sm mb-4">Educational Materials</h2>
+          <p class="text-body text-gray-600 mb-6">Access a comprehensive collection of articles, research papers, and case studies.</p>
         </div>
       </div>
 
@@ -72,8 +72,8 @@
           </svg>
         </div>
         <div class="p-8">
-          <h2 class="text-2xl font-bold mb-4">Practical Guides</h2>
-          <p class="text-gray-600 mb-6">Step-by-step guides and toolkits for implementing One Health approaches.</p>
+          <h2 class="heading-sm mb-4">Practical Guides</h2>
+          <p class="text-body text-gray-600 mb-6">Step-by-step guides and toolkits for implementing One Health approaches.</p>
         </div>
       </div>
 
@@ -86,8 +86,8 @@
           </svg>
         </div>
         <div class="p-8">
-          <h2 class="text-2xl font-bold mb-4">Training Resources</h2>
-          <p class="text-gray-600 mb-6">Workshops, webinars, and certification programs.</p>
+          <h2 class="heading-sm mb-4">Training Resources</h2>
+          <p class="text-body text-gray-600 mb-6">Workshops, webinars, and certification programs.</p>
         </div>
       </div>
     </div>
@@ -97,9 +97,9 @@
       <div *ngFor="let resource of filteredResources" 
            class="resource-card slide-up">
         <div class="p-6 flex flex-col h-full">
-          <h3 class="text-xl font-semibold mb-3">{{ resource.title }}</h3>
+          <h3 class="heading-sm mb-3">{{ resource.title }}</h3>
           <span class="type-badge bg-blue-100 text-blue-800 mb-4">{{ resource.type }}</span>
-          <p class="text-gray-600 flex-grow">{{ resource.description }}</p>
+          <p class="text-body text-gray-600 flex-grow">{{ resource.description }}</p>
           <button class="btn btn-primary mt-6 focus:outline-none focus:ring-4 focus:ring-blue-200">
             Learn More
             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,14 +115,14 @@
       <svg class="w-16 h-16 text-gray-400 mb-4 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
-      <p class="text-xl mb-4">No resources found matching your search criteria.</p>
+      <p class="text-body-lg mb-4">No resources found matching your search criteria.</p>
       <button (click)="clearFilters()" class="btn btn-primary">Clear filters</button>
     </div>
 
     <!-- Need More Information Section -->
     <div class="mt-24 bg-white rounded-2xl shadow-lg p-12 text-center max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Need More Information?</h2>
-      <p class="text-xl text-gray-600 mb-8">Contact our team for additional resources or specific inquiries.</p>
+      <h2 class="heading-md mb-6">Need More Information?</h2>
+      <p class="text-body-lg text-gray-600 mb-8">Contact our team for additional resources or specific inquiries.</p>
       <button class="btn btn-primary text-lg" (click)="navigateToContact()">
         Contact Us
         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
