@@ -377,7 +377,7 @@ var AppComponent = _AppComponent;
 var routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", loadComponent: () => import("./chunk-F3S2KKQU.mjs").then((m) => m.HomeComponent) },
-  { path: "about-us", loadComponent: () => import("./chunk-Z7EVQW5F.mjs").then((m) => m.AboutUsComponent) },
+  { path: "about-us", loadComponent: () => import("./chunk-P62S4OMI.mjs").then((m) => m.AboutUsComponent) },
   { path: "programs", loadComponent: () => import("./chunk-NQM2QDIO.mjs").then((m) => m.ProgramsComponent) },
   { path: "news", loadComponent: () => import("./chunk-WQPNPN74.mjs").then((m) => m.NewsComponent) },
   { path: "resources", loadComponent: () => import("./chunk-3A6P3YD3.mjs").then((m) => m.ResourcesComponent) },
@@ -624,4 +624,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-BVTVVKDB.mjs.map
+//# sourceMappingURL=chunk-NYCT2HAX.mjs.map

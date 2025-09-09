@@ -210,7 +210,7 @@ var NoopAnimationsModule = _NoopAnimationsModule;
 var routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", loadComponent: () => import("./chunk-SUICAJW2.js").then((m) => m.HomeComponent) },
-  { path: "about-us", loadComponent: () => import("./chunk-YPQ64Y2R.js").then((m) => m.AboutUsComponent) },
+  { path: "about-us", loadComponent: () => import("./chunk-UCOAM64V.js").then((m) => m.AboutUsComponent) },
   { path: "programs", loadComponent: () => import("./chunk-Z755ZVBY.js").then((m) => m.ProgramsComponent) },
   { path: "news", loadComponent: () => import("./chunk-NKGWUVNP.js").then((m) => m.NewsComponent) },
   { path: "resources", loadComponent: () => import("./chunk-3XQ7R6AS.js").then((m) => m.ResourcesComponent) },

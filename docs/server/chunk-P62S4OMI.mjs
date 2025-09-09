@@ -1,12 +1,13 @@
-import "./chunk-H2XSCM4B.js";
+import './polyfills.server.mjs';
+import "./chunk-TWBZTKS7.mjs";
 import {
   ScrollAnimationDirective
-} from "./chunk-IO2DL3NX.js";
+} from "./chunk-XDIDHDXD.mjs";
 import {
   CommonModule,
   NgForOf,
   NgIf
-} from "./chunk-GIY2C73M.js";
+} from "./chunk-XHNCF4IE.mjs";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -28,32 +29,33 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate2
-} from "./chunk-RABZPDKX.js";
+} from "./chunk-YASMSVLX.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/pages/about-us/about-us.component.ts
 function AboutUsComponent_div_189_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 115);
+    \u0275\u0275elementStart(0, "div", 116);
     \u0275\u0275listener("click", function AboutUsComponent_div_189_Template_div_click_0_listener() {
       const restoredCtx = \u0275\u0275restoreView(_r4);
       const member_r2 = restoredCtx.$implicit;
       const ctx_r3 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r3.openBoardMemberModal(member_r2));
     });
-    \u0275\u0275elementStart(1, "div", 116);
-    \u0275\u0275element(2, "img", 117);
+    \u0275\u0275elementStart(1, "div", 117);
+    \u0275\u0275element(2, "img", 118);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "div")(4, "h3", 118);
+    \u0275\u0275elementStart(3, "div")(4, "h3", 119);
     \u0275\u0275text(5);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(6, "p", 119);
+    \u0275\u0275elementStart(6, "p", 120);
     \u0275\u0275text(7);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "p", 120);
+    \u0275\u0275elementStart(8, "p", 121);
     \u0275\u0275text(9);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "p", 121);
+    \u0275\u0275elementStart(10, "p", 122);
     \u0275\u0275text(11);
     \u0275\u0275elementEnd()()();
   }
@@ -74,39 +76,39 @@ function AboutUsComponent_div_189_Template(rf, ctx) {
 function AboutUsComponent_div_190_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 122);
+    \u0275\u0275elementStart(0, "div", 123);
     \u0275\u0275listener("click", function AboutUsComponent_div_190_Template_div_click_0_listener() {
       \u0275\u0275restoreView(_r6);
       const ctx_r5 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r5.closeBoardMemberModal());
     });
-    \u0275\u0275elementStart(1, "div", 123);
+    \u0275\u0275elementStart(1, "div", 124);
     \u0275\u0275listener("click", function AboutUsComponent_div_190_Template_div_click_1_listener($event) {
       return $event.stopPropagation();
     });
     \u0275\u0275elementStart(2, "div", 88);
-    \u0275\u0275element(3, "img", 124);
-    \u0275\u0275elementStart(4, "button", 125);
+    \u0275\u0275element(3, "img", 125);
+    \u0275\u0275elementStart(4, "button", 126);
     \u0275\u0275listener("click", function AboutUsComponent_div_190_Template_button_click_4_listener() {
       \u0275\u0275restoreView(_r6);
       const ctx_r8 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r8.closeBoardMemberModal());
     });
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(5, "svg", 126);
-    \u0275\u0275element(6, "path", 127);
+    \u0275\u0275elementStart(5, "svg", 127);
+    \u0275\u0275element(6, "path", 128);
     \u0275\u0275elementEnd()()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(7, "div", 128)(8, "h3", 129);
+    \u0275\u0275elementStart(7, "div", 129)(8, "h3", 130);
     \u0275\u0275text(9);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "p", 130);
+    \u0275\u0275elementStart(10, "p", 131);
     \u0275\u0275text(11);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(12, "p", 131);
+    \u0275\u0275elementStart(12, "p", 132);
     \u0275\u0275text(13);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(14, "div", 132)(15, "p", 28);
+    \u0275\u0275elementStart(14, "div", 133)(15, "p", 28);
     \u0275\u0275text(16);
     \u0275\u0275elementEnd()()()()();
   }
@@ -223,7 +225,7 @@ var _AboutUsComponent = class _AboutUsComponent {
 _AboutUsComponent.\u0275fac = function AboutUsComponent_Factory(t) {
   return new (t || _AboutUsComponent)();
 };
-_AboutUsComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AboutUsComponent, selectors: [["app-about-us"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 310, vars: 2, consts: [[1, "min-h-screen", "bg-white"], [1, "relative", "py-32", "bg-gradient-to-br", "from-blue-900", "to-blue-700", "text-white"], [1, "absolute", "inset-0", "bg-black/30"], [1, "container", "mx-auto", "px-4", "lg:px-8", "relative", "z-10"], [1, "max-w-4xl", "mx-auto", "text-center"], [1, "heading-xl", "text-white", "mb-6"], [1, "text-body-lg", "text-white/90", "max-w-4xl", "mx-auto"], [1, "section-clean", "bg-gray-50"], [1, "container-clean"], [1, "grid", "lg:grid-cols-2", "gap-16", "lg:gap-20"], [1, "heading-md", "text-gray-900", "mb-6"], [1, "text-body", "text-gray-600"], [1, "section-clean", "bg-white"], [1, "max-w-4xl", "mx-auto"], [1, "heading-lg", "text-gray-900", "mb-12"], [1, "space-y-6"], [1, "py-24", "lg:py-32", "bg-gradient-to-br", "from-gray-50", "to-white", "rounded-2xl", "mb-12"], [1, "container", "mx-auto", "px-4", "lg:px-8"], [1, "max-w-6xl", "mx-auto"], [1, "text-center", "mb-12", "lg:mb-16"], [1, "text-3xl", "lg:text-4xl", "font-sans", "font-bold", "text-blue-700", "mb-4"], [1, "w-20", "h-1", "bg-blue-600", "mx-auto", "mb-6", "rounded-full"], [1, "max-w-3xl", "mx-auto"], [1, "text-xl", "text-gray-600", "font-medium"], [1, "grid", "lg:grid-cols-2", "gap-12", "lg:gap-16", "items-center"], [1, "order-2", "lg:order-1"], [1, "bg-white", "rounded-xl", "p-8", "shadow-lg", "border-l-4", "border-blue-600", "hover:shadow-xl", "transition", "duration-300"], [1, "text-lg", "font-semibold", "text-gray-900", "mb-3"], [1, "text-gray-700", "leading-relaxed"], [1, "bg-white", "rounded-xl", "p-8", "shadow-lg", "border-l-4", "border-green-500", "hover:shadow-xl", "transition", "duration-300"], [1, "bg-white", "rounded-xl", "p-8", "shadow-lg", "border-l-4", "border-purple-500", "hover:shadow-xl", "transition", "duration-300"], [1, "order-1", "lg:order-2"], [1, "bg-gradient-to-br", "from-blue-600", "to-blue-700", "rounded-2xl", "p-10", "lg:p-12", "text-white", "shadow-xl"], [1, "text-2xl", "lg:text-3xl", "font-bold", "mb-8", "text-center", "tracking-tight"], [1, "space-y-8"], [1, "flex", "items-center", "group"], [1, "w-16", "h-16", "bg-white/20", "rounded-xl", "flex", "items-center", "justify-center", "mr-6", "group-hover:bg-white/30", "transition-colors"], [1, "text-2xl", "font-bold"], [1, "font-semibold", "text-lg"], [1, "text-blue-100"], [1, "mt-8", "pt-6", "border-t", "border-white/20"], [1, "text-center", "text-blue-100", "italic"], [1, "py-20", "bg-gray-50"], [1, "max-w-4xl", "mx-auto", "mb-16"], [1, "heading-lg", "text-gray-900", "mb-6", "md:mb-8"], [1, "grid", "md:grid-cols-2", "lg:grid-cols-3", "gap-8", "max-w-6xl", "mx-auto"], [1, "bg-white", "rounded-2xl", "p-8", "shadow-lg", "hover:shadow-xl", "transition-all", "duration-300", "transform", "hover:-translate-y-1"], [1, "flex", "items-center", "justify-center", "w-16", "h-16", "bg-blue-100", "rounded-xl", "mb-6"], ["fill", "none", "stroke", "currentColor", "viewBox", "0 0 24 24", 1, "w-8", "h-8", "text-blue-600"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"], [1, "text-xl", "font-semibold", "mb-3", "text-gray-900"], [1, "text-gray-600"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M15 12a3 3 0 11-6 0 3 3 0 016 0z"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"], [1, "text-sm", "sm:text-base", "text-gray-600"], ["scrollAnimation", "", "animationClass", "animate-slide-in-left", "animationDelay", "900ms", 1, "bg-white", "rounded-xl", "sm:rounded-2xl", "p-6", "sm:p-8", "lg:p-10", "shadow-lg", "hover:shadow-xl", "transition-all", "duration-300", "transform", "hover:-translate-y-1"], [1, "flex", "items-center", "justify-center", "w-12", "h-12", "sm:w-16", "sm:h-16", "bg-blue-100", "rounded-lg", "sm:rounded-xl", "mb-4", "sm:mb-6"], ["fill", "none", "stroke", "currentColor", "viewBox", "0 0 24 24", 1, "w-6", "h-6", "sm:w-8", "sm:h-8", "text-blue-600"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"], [1, "text-md", "sm:text-xl", "font-semibold", "mb-3"], [1, "py-16", "lg:py-24", "bg-white"], [1, "text-3xl", "lg:text-4xl", "font-bold", "text-gray-900", "mb-4"], [1, "w-20", "h-1", "bg-blue-600", "mx-auto", "mb-8"], [1, "text-lg", "text-gray-600", "leading-relaxed", "mb-12"], [1, "bg-blue-50", "rounded-2xl", "p-8", "mb-8"], [1, "text-xl", "font-semibold", "text-gray-900", "mb-6"], [1, "grid", "md:grid-cols-2", "lg:grid-cols-3", "gap-4", "text-gray-600"], [1, "bg-white", "rounded-lg", "p-4"], [1, "bg-white", "rounded-lg", "p-4", "md:col-span-2", "lg:col-span-1"], ["href", "/contact-us", 1, "inline-flex", "items-center", "px-8", "py-3", "text-lg", "font-semibold", "text-white", "bg-blue-600", "rounded-lg", "hover:bg-blue-700", "transform", "hover:scale-105", "transition-all", "duration-300", "shadow-lg", "hover:shadow-xl", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200"], ["fill", "none", "stroke", "currentColor", "viewBox", "0 0 24 24", 1, "w-5", "h-5", "ml-2"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"], [1, "text-2xl", "sm:text-3xl", "md:text-4xl", "lg:text-5xl", "font-light", "text-gray-900", "mb-6", "md:mb-8"], [1, "text-base", "sm:text-lg", "text-gray-600", "leading-relaxed"], [1, "grid", "md:grid-cols-2", "lg:grid-cols-3", "gap-12", "max-w-6xl", "mx-auto"], ["class", "group cursor-pointer", 3, "click", 4, "ngFor", "ngForOf"], ["class", "fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50", "role", "dialog", "aria-modal", "true", "aria-labelledby", "board-member-title", 3, "click", 4, "ngIf"], [1, "py-24", "bg-gradient-to-br", "from-white", "to-blue-50", "rounded-2xl", "mb-12"], [1, "max-w-4xl", "mx-auto", "mb-16", "text-center"], [1, "text-2xl", "sm:text-3xl", "md:text-4xl", "lg:text-5xl", "font-bold", "text-blue-700", "mb-6", "md:mb-8", "tracking-tight"], [1, "text-base", "sm:text-lg", "text-gray-600", "leading-relaxed", "mb-4"], [1, "mb-16"], [1, "text-xl", "sm:text-2xl", "font-bold", "text-blue-700", "mb-6", "md:mb-8", "text-center", "tracking-tight"], [1, "grid", "md:grid-cols-2", "lg:grid-cols-3", "gap-10", "max-w-6xl", "mx-auto"], ["tabindex", "0", "role", "button", 1, "group", "bg-white", "rounded-2xl", "overflow-hidden", "shadow-lg", "hover:shadow-xl", "transition-all", "duration-300", "transform", "hover:-translate-y-1", "border", "border-blue-100", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200", 3, "keydown.enter"], [1, "relative"], ["src", "assets/images/team/Master Zambezi.jpg", "alt", "Executive Director", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], [1, "absolute", "inset-0", "bg-gradient-to-t", "from-black/60", "to-transparent", "rounded-t-2xl"], [1, "absolute", "bottom-0", "left-0", "right-0", "p-6"], [1, "text-lg", "sm:text-xl", "font-bold", "text-white", "mb-1", "drop-shadow"], [1, "text-white/90", "text-xs", "sm:text-sm"], [1, "p-6"], ["tabindex", "0", 1, "group", "bg-white", "rounded-2xl", "overflow-hidden", "shadow-lg", "hover:shadow-xl", "transition-all", "duration-300", "transform", "hover:-translate-y-1", "border", "border-blue-100", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200"], ["src", "assets/images/team/Rudo Pirigu.jpg", "alt", "Program Manager Education", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], [1, "text-xl", "font-bold", "text-white", "mb-1", "drop-shadow"], [1, "text-white/90", "text-sm"], ["src", "assets/images/team/Zichitina Msekandiana.jpg", "alt", "Program Manager Operations", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], ["src", "assets/images/team/Yamikani Hara.jpg", "alt", "M&E Officer", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], ["src", "assets/images/team/Kelvin Mulera.jpg", "alt", "Communications Officer", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], ["src", "assets/images/team/Owen Kulapani.jpg", "alt", "Finance Officer", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], [1, "text-center"], [1, "text-2xl", "font-bold", "text-blue-700", "mb-8"], [1, "grid", "md:grid-cols-3", "gap-8", "max-w-4xl", "mx-auto"], [1, "bg-white", "rounded-xl", "p-8", "shadow-lg", "border", "border-blue-100"], [1, "text-lg", "font-bold", "text-blue-600", "mb-3"], [1, "text-center", "mt-12"], ["href", "/contact-us", 1, "inline-flex", "items-center", "px-8", "py-3", "text-lg", "font-semibold", "text-blue-600", "bg-blue-50", "rounded-lg", "hover:bg-blue-100", "transform", "hover:scale-105", "transition-all", "duration-300"], [1, "text-3xl", "lg:text-4xl", "font-bold", "text-gray-900", "mb-6"], [1, "text-lg", "text-gray-600", "mb-8", "leading-relaxed"], [1, "flex", "flex-col", "sm:flex-row", "gap-4", "justify-center"], ["href", "/get-involved", 1, "inline-block", "bg-blue-600", "text-white", "px-8", "py-3", "rounded-lg", "font-semibold", "hover:bg-blue-700", "transform", "hover:scale-105", "transition-all", "duration-300", "shadow-lg", "hover:shadow-xl", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200"], ["href", "/contact-us", 1, "inline-block", "bg-white", "text-blue-600", "border-2", "border-blue-600", "px-8", "py-3", "rounded-lg", "font-semibold", "hover:bg-blue-50", "transform", "hover:scale-105", "transition-all", "duration-300", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200"], [1, "group", "cursor-pointer", 3, "click"], [1, "mb-6"], [1, "w-full", "h-80", "object-cover", "grayscale", "group-hover:grayscale-0", "transition-all", "duration-500", 3, "src", "alt"], [1, "text-lg", "sm:text-xl", "font-medium", "text-gray-900", "mb-2"], [1, "text-sm", "sm:text-base", "text-gray-600", "mb-2"], [1, "text-xs", "sm:text-sm", "text-gray-500", "mb-3", "md:mb-4"], [1, "text-sm", "sm:text-base", "text-gray-600", "leading-relaxed"], ["role", "dialog", "aria-modal", "true", "aria-labelledby", "board-member-title", 1, "fixed", "inset-0", "bg-black", "bg-opacity-60", "flex", "items-center", "justify-center", "p-4", "z-50", 3, "click"], ["tabindex", "-1", 1, "bg-white", "rounded-2xl", "max-w-2xl", "w-full", "max-h-[90vh]", "overflow-y-auto", 3, "click"], [1, "w-full", "h-64", "object-cover", 3, "src", "alt"], ["aria-label", "Close dialog", 1, "absolute", "top-4", "right-4", "bg-white", "bg-opacity-90", "hover:bg-opacity-100", "rounded-full", "p-2", "transition-all", "focus:outline-none", "focus:ring-2", "focus:ring-blue-600", 3, "click"], ["fill", "none", "stroke", "currentColor", "viewBox", "0 0 24 24", 1, "w-6", "h-6", "text-gray-600"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M6 18L18 6M6 6l12 12"], [1, "p-8"], [1, "text-2xl", "font-bold", "text-gray-900", "mb-2"], [1, "text-blue-600", "font-semibold", "mb-1"], [1, "text-gray-600", "mb-4"], [1, "prose", "prose-gray", "max-w-none"]], template: function AboutUsComponent_Template(rf, ctx) {
+_AboutUsComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AboutUsComponent, selectors: [["app-about-us"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 322, vars: 2, consts: [[1, "min-h-screen", "bg-white"], [1, "relative", "py-32", "bg-gradient-to-br", "from-blue-900", "to-blue-700", "text-white"], [1, "absolute", "inset-0", "bg-black/30"], [1, "container", "mx-auto", "px-4", "lg:px-8", "relative", "z-10"], [1, "max-w-4xl", "mx-auto", "text-center"], [1, "heading-xl", "text-white", "mb-6"], [1, "text-body-lg", "text-white/90", "max-w-4xl", "mx-auto"], [1, "section-clean", "bg-gray-50"], [1, "container-clean"], [1, "grid", "lg:grid-cols-2", "gap-16", "lg:gap-20"], [1, "heading-md", "text-gray-900", "mb-6"], [1, "text-body", "text-gray-600"], [1, "section-clean", "bg-white"], [1, "max-w-4xl", "mx-auto"], [1, "heading-lg", "text-gray-900", "mb-12"], [1, "space-y-6"], [1, "py-24", "lg:py-32", "bg-gradient-to-br", "from-gray-50", "to-white", "rounded-2xl", "mb-12"], [1, "container", "mx-auto", "px-4", "lg:px-8"], [1, "max-w-6xl", "mx-auto"], [1, "text-center", "mb-12", "lg:mb-16"], [1, "text-3xl", "lg:text-4xl", "font-sans", "font-bold", "text-blue-700", "mb-4"], [1, "w-20", "h-1", "bg-blue-600", "mx-auto", "mb-6", "rounded-full"], [1, "max-w-3xl", "mx-auto"], [1, "text-xl", "text-gray-600", "font-medium"], [1, "grid", "lg:grid-cols-2", "gap-12", "lg:gap-16", "items-center"], [1, "order-2", "lg:order-1"], [1, "bg-white", "rounded-xl", "p-8", "shadow-lg", "border-l-4", "border-blue-600", "hover:shadow-xl", "transition", "duration-300"], [1, "text-lg", "font-semibold", "text-gray-900", "mb-3"], [1, "text-gray-700", "leading-relaxed"], [1, "bg-white", "rounded-xl", "p-8", "shadow-lg", "border-l-4", "border-green-500", "hover:shadow-xl", "transition", "duration-300"], [1, "bg-white", "rounded-xl", "p-8", "shadow-lg", "border-l-4", "border-purple-500", "hover:shadow-xl", "transition", "duration-300"], [1, "order-1", "lg:order-2"], [1, "bg-gradient-to-br", "from-blue-600", "to-blue-700", "rounded-2xl", "p-10", "lg:p-12", "text-white", "shadow-xl"], [1, "text-2xl", "lg:text-3xl", "font-bold", "mb-8", "text-center", "tracking-tight"], [1, "space-y-8"], [1, "flex", "items-center", "group"], [1, "w-16", "h-16", "bg-white/20", "rounded-xl", "flex", "items-center", "justify-center", "mr-6", "group-hover:bg-white/30", "transition-colors"], [1, "text-2xl", "font-bold"], [1, "font-semibold", "text-lg"], [1, "text-blue-100"], [1, "mt-8", "pt-6", "border-t", "border-white/20"], [1, "text-center", "text-blue-100", "italic"], [1, "py-20", "bg-gray-50"], [1, "max-w-4xl", "mx-auto", "mb-16"], [1, "heading-lg", "text-gray-900", "mb-6", "md:mb-8"], [1, "grid", "md:grid-cols-2", "lg:grid-cols-3", "gap-8", "max-w-6xl", "mx-auto"], [1, "bg-white", "rounded-2xl", "p-8", "shadow-lg", "hover:shadow-xl", "transition-all", "duration-300", "transform", "hover:-translate-y-1"], [1, "flex", "items-center", "justify-center", "w-16", "h-16", "bg-blue-100", "rounded-xl", "mb-6"], ["fill", "none", "stroke", "currentColor", "viewBox", "0 0 24 24", 1, "w-8", "h-8", "text-blue-600"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"], [1, "text-xl", "font-semibold", "mb-3", "text-gray-900"], [1, "text-gray-600"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M15 12a3 3 0 11-6 0 3 3 0 016 0z"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"], [1, "text-sm", "sm:text-base", "text-gray-600"], ["scrollAnimation", "", "animationClass", "animate-slide-in-left", "animationDelay", "900ms", 1, "bg-white", "rounded-xl", "sm:rounded-2xl", "p-6", "sm:p-8", "lg:p-10", "shadow-lg", "hover:shadow-xl", "transition-all", "duration-300", "transform", "hover:-translate-y-1"], [1, "flex", "items-center", "justify-center", "w-12", "h-12", "sm:w-16", "sm:h-16", "bg-blue-100", "rounded-lg", "sm:rounded-xl", "mb-4", "sm:mb-6"], ["fill", "none", "stroke", "currentColor", "viewBox", "0 0 24 24", 1, "w-6", "h-6", "sm:w-8", "sm:h-8", "text-blue-600"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"], [1, "text-md", "sm:text-xl", "font-semibold", "mb-3"], [1, "py-16", "lg:py-24", "bg-white"], [1, "text-3xl", "lg:text-4xl", "font-bold", "text-gray-900", "mb-4"], [1, "w-20", "h-1", "bg-blue-600", "mx-auto", "mb-8"], [1, "text-lg", "text-gray-600", "leading-relaxed", "mb-12"], [1, "bg-blue-50", "rounded-2xl", "p-8", "mb-8"], [1, "text-xl", "font-semibold", "text-gray-900", "mb-6"], [1, "grid", "md:grid-cols-2", "lg:grid-cols-3", "gap-4", "text-gray-600"], [1, "bg-white", "rounded-lg", "p-4"], [1, "bg-white", "rounded-lg", "p-4", "md:col-span-2", "lg:col-span-1"], ["href", "/contact-us", 1, "inline-flex", "items-center", "px-8", "py-3", "text-lg", "font-semibold", "text-white", "bg-blue-600", "rounded-lg", "hover:bg-blue-700", "transform", "hover:scale-105", "transition-all", "duration-300", "shadow-lg", "hover:shadow-xl", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200"], ["fill", "none", "stroke", "currentColor", "viewBox", "0 0 24 24", 1, "w-5", "h-5", "ml-2"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"], [1, "text-2xl", "sm:text-3xl", "md:text-4xl", "lg:text-5xl", "font-light", "text-gray-900", "mb-6", "md:mb-8"], [1, "text-base", "sm:text-lg", "text-gray-600", "leading-relaxed"], [1, "grid", "md:grid-cols-2", "lg:grid-cols-3", "gap-12", "max-w-6xl", "mx-auto"], ["class", "group cursor-pointer", 3, "click", 4, "ngFor", "ngForOf"], ["class", "fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50", "role", "dialog", "aria-modal", "true", "aria-labelledby", "board-member-title", 3, "click", 4, "ngIf"], [1, "py-24", "bg-gradient-to-br", "from-white", "to-blue-50", "rounded-2xl", "mb-12"], [1, "max-w-4xl", "mx-auto", "mb-16", "text-center"], [1, "text-2xl", "sm:text-3xl", "md:text-4xl", "lg:text-5xl", "font-bold", "text-blue-700", "mb-6", "md:mb-8", "tracking-tight"], [1, "text-base", "sm:text-lg", "text-gray-600", "leading-relaxed", "mb-4"], [1, "mb-16"], [1, "text-xl", "sm:text-2xl", "font-bold", "text-blue-700", "mb-6", "md:mb-8", "text-center", "tracking-tight"], [1, "grid", "md:grid-cols-2", "lg:grid-cols-3", "gap-10", "max-w-6xl", "mx-auto"], ["tabindex", "0", "role", "button", 1, "group", "bg-white", "rounded-2xl", "overflow-hidden", "shadow-lg", "hover:shadow-xl", "transition-all", "duration-300", "transform", "hover:-translate-y-1", "border", "border-blue-100", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200", 3, "keydown.enter"], [1, "relative"], ["src", "assets/images/team/Master Zambezi.jpg", "alt", "Executive Director", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], [1, "absolute", "inset-0", "bg-gradient-to-t", "from-black/60", "to-transparent", "rounded-t-2xl"], [1, "absolute", "bottom-0", "left-0", "right-0", "p-6"], [1, "text-lg", "sm:text-xl", "font-bold", "text-white", "mb-1", "drop-shadow"], [1, "text-white/90", "text-xs", "sm:text-sm"], [1, "p-6"], ["tabindex", "0", 1, "group", "bg-white", "rounded-2xl", "overflow-hidden", "shadow-lg", "hover:shadow-xl", "transition-all", "duration-300", "transform", "hover:-translate-y-1", "border", "border-blue-100", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200"], ["src", "assets/images/team/Rudo Pirigu.jpg", "alt", "Program Manager Education", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], [1, "text-xl", "font-bold", "text-white", "mb-1", "drop-shadow"], [1, "text-white/90", "text-sm"], ["src", "assets/images/team/Zichitina Msekandiana.jpg", "alt", "Program Manager Operations", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], ["src", "assets/images/team/Yamikani Hara.jpg", "alt", "M&E Officer", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], ["src", "assets/images/team/Kelvin Mulera.jpg", "alt", "Communications Officer", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], ["src", "assets/images/team/Connis Chitsulo.jpg", "alt", "Connice Chitsulo - Field Coordinator", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], ["src", "assets/images/team/Owen Kulapani.jpg", "alt", "Finance Officer", 1, "w-full", "h-64", "object-cover", "rounded-t-2xl", "group-hover:scale-105", "transition-transform", "duration-500", "border-b-4", "border-blue-600"], [1, "text-center"], [1, "text-2xl", "font-bold", "text-blue-700", "mb-8"], [1, "grid", "md:grid-cols-3", "gap-8", "max-w-4xl", "mx-auto"], [1, "bg-white", "rounded-xl", "p-8", "shadow-lg", "border", "border-blue-100"], [1, "text-lg", "font-bold", "text-blue-600", "mb-3"], [1, "text-center", "mt-12"], ["href", "/contact-us", 1, "inline-flex", "items-center", "px-8", "py-3", "text-lg", "font-semibold", "text-blue-600", "bg-blue-50", "rounded-lg", "hover:bg-blue-100", "transform", "hover:scale-105", "transition-all", "duration-300"], [1, "text-3xl", "lg:text-4xl", "font-bold", "text-gray-900", "mb-6"], [1, "text-lg", "text-gray-600", "mb-8", "leading-relaxed"], [1, "flex", "flex-col", "sm:flex-row", "gap-4", "justify-center"], ["href", "/get-involved", 1, "inline-block", "bg-blue-600", "text-white", "px-8", "py-3", "rounded-lg", "font-semibold", "hover:bg-blue-700", "transform", "hover:scale-105", "transition-all", "duration-300", "shadow-lg", "hover:shadow-xl", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200"], ["href", "/contact-us", 1, "inline-block", "bg-white", "text-blue-600", "border-2", "border-blue-600", "px-8", "py-3", "rounded-lg", "font-semibold", "hover:bg-blue-50", "transform", "hover:scale-105", "transition-all", "duration-300", "focus:outline-none", "focus:ring-4", "focus:ring-blue-200"], [1, "group", "cursor-pointer", 3, "click"], [1, "mb-6"], [1, "w-full", "h-80", "object-cover", "grayscale", "group-hover:grayscale-0", "transition-all", "duration-500", 3, "src", "alt"], [1, "text-lg", "sm:text-xl", "font-medium", "text-gray-900", "mb-2"], [1, "text-sm", "sm:text-base", "text-gray-600", "mb-2"], [1, "text-xs", "sm:text-sm", "text-gray-500", "mb-3", "md:mb-4"], [1, "text-sm", "sm:text-base", "text-gray-600", "leading-relaxed"], ["role", "dialog", "aria-modal", "true", "aria-labelledby", "board-member-title", 1, "fixed", "inset-0", "bg-black", "bg-opacity-60", "flex", "items-center", "justify-center", "p-4", "z-50", 3, "click"], ["tabindex", "-1", 1, "bg-white", "rounded-2xl", "max-w-2xl", "w-full", "max-h-[90vh]", "overflow-y-auto", 3, "click"], [1, "w-full", "h-64", "object-cover", 3, "src", "alt"], ["aria-label", "Close dialog", 1, "absolute", "top-4", "right-4", "bg-white", "bg-opacity-90", "hover:bg-opacity-100", "rounded-full", "p-2", "transition-all", "focus:outline-none", "focus:ring-2", "focus:ring-blue-600", 3, "click"], ["fill", "none", "stroke", "currentColor", "viewBox", "0 0 24 24", 1, "w-6", "h-6", "text-gray-600"], ["stroke-linecap", "round", "stroke-linejoin", "round", "stroke-width", "2", "d", "M6 18L18 6M6 6l12 12"], [1, "p-8"], [1, "text-2xl", "font-bold", "text-gray-900", "mb-2"], [1, "text-blue-600", "font-semibold", "mb-1"], [1, "text-gray-600", "mb-4"], [1, "prose", "prose-gray", "max-w-none"]], template: function AboutUsComponent_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 0)(1, "section", 1);
     \u0275\u0275element(2, "div", 2);
@@ -499,54 +501,65 @@ _AboutUsComponent.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type
     \u0275\u0275elementEnd()()();
     \u0275\u0275elementStart(262, "div", 95)(263, "div", 88);
     \u0275\u0275element(264, "img", 102)(265, "div", 90);
-    \u0275\u0275elementStart(266, "div", 91)(267, "h3", 97);
-    \u0275\u0275text(268, "Finance Officer");
+    \u0275\u0275elementStart(266, "div", 91)(267, "h3", 92);
+    \u0275\u0275text(268, "Field Coordinator");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(269, "p", 98);
-    \u0275\u0275text(270, "Financial Management");
+    \u0275\u0275elementStart(269, "p", 93);
+    \u0275\u0275text(270, "Community Programs");
     \u0275\u0275elementEnd()()();
     \u0275\u0275elementStart(271, "div", 94)(272, "p", 51);
-    \u0275\u0275text(273, "Managing financial operations and ensuring fiscal responsibility.");
+    \u0275\u0275text(273, "Connice leads field operations and coordinates community outreach to ensure program delivery and local partnerships.");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(274, "div", 95)(275, "div", 88);
+    \u0275\u0275element(276, "img", 103)(277, "div", 90);
+    \u0275\u0275elementStart(278, "div", 91)(279, "h3", 97);
+    \u0275\u0275text(280, "Finance Officer");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(281, "p", 98);
+    \u0275\u0275text(282, "Financial Management");
+    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(283, "div", 94)(284, "p", 51);
+    \u0275\u0275text(285, "Managing financial operations and ensuring fiscal responsibility.");
     \u0275\u0275elementEnd()()()()();
-    \u0275\u0275elementStart(274, "div", 103)(275, "h3", 104);
-    \u0275\u0275text(276, "Advisory Board");
+    \u0275\u0275elementStart(286, "div", 104)(287, "h3", 105);
+    \u0275\u0275text(288, "Advisory Board");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(277, "div", 105)(278, "div", 106)(279, "h4", 107);
-    \u0275\u0275text(280, "Epidemiology");
+    \u0275\u0275elementStart(289, "div", 106)(290, "div", 107)(291, "h4", 108);
+    \u0275\u0275text(292, "Epidemiology");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(281, "p", 51);
-    \u0275\u0275text(282, "Disease surveillance and outbreak response expertise");
+    \u0275\u0275elementStart(293, "p", 51);
+    \u0275\u0275text(294, "Disease surveillance and outbreak response expertise");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(283, "div", 106)(284, "h4", 107);
-    \u0275\u0275text(285, "Policy Development");
+    \u0275\u0275elementStart(295, "div", 107)(296, "h4", 108);
+    \u0275\u0275text(297, "Policy Development");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(286, "p", 51);
-    \u0275\u0275text(287, "Health policy development and advocacy guidance");
+    \u0275\u0275elementStart(298, "p", 51);
+    \u0275\u0275text(299, "Health policy development and advocacy guidance");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(288, "div", 106)(289, "h4", 107);
-    \u0275\u0275text(290, "Resource Mobilization");
+    \u0275\u0275elementStart(300, "div", 107)(301, "h4", 108);
+    \u0275\u0275text(302, "Resource Mobilization");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(291, "p", 51);
-    \u0275\u0275text(292, "Fundraising strategy and financial planning");
+    \u0275\u0275elementStart(303, "p", 51);
+    \u0275\u0275text(304, "Fundraising strategy and financial planning");
     \u0275\u0275elementEnd()()()();
-    \u0275\u0275elementStart(293, "div", 108)(294, "a", 109);
-    \u0275\u0275text(295, " Connect with Our Team ");
+    \u0275\u0275elementStart(305, "div", 109)(306, "a", 110);
+    \u0275\u0275text(307, " Connect with Our Team ");
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(296, "svg", 73);
-    \u0275\u0275element(297, "path", 49);
+    \u0275\u0275elementStart(308, "svg", 73);
+    \u0275\u0275element(309, "path", 49);
     \u0275\u0275elementEnd()()()()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(298, "section", 63)(299, "div", 17)(300, "div", 4)(301, "h2", 110);
-    \u0275\u0275text(302, "Join Our Mission");
+    \u0275\u0275elementStart(310, "section", 63)(311, "div", 17)(312, "div", 4)(313, "h2", 111);
+    \u0275\u0275text(314, "Join Our Mission");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(303, "p", 111);
-    \u0275\u0275text(304, " Together, we can create a healthier future for Malawi. Join us in our mission to integrate One Health principles into community well-being. ");
+    \u0275\u0275elementStart(315, "p", 112);
+    \u0275\u0275text(316, " Together, we can create a healthier future for Malawi. Join us in our mission to integrate One Health principles into community well-being. ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(305, "div", 112)(306, "a", 113);
-    \u0275\u0275text(307, " Get Involved ");
+    \u0275\u0275elementStart(317, "div", 113)(318, "a", 114);
+    \u0275\u0275text(319, " Get Involved ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(308, "a", 114);
-    \u0275\u0275text(309, " Contact Us ");
+    \u0275\u0275elementStart(320, "a", 115);
+    \u0275\u0275text(321, " Contact Us ");
     \u0275\u0275elementEnd()()()()()();
   }
   if (rf & 2) {
@@ -728,4 +741,4 @@ var AboutUsComponent = _AboutUsComponent;
 export {
   AboutUsComponent
 };
-//# sourceMappingURL=chunk-YPQ64Y2R.js.map
+//# sourceMappingURL=chunk-P62S4OMI.mjs.map
