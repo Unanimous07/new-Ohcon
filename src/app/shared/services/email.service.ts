@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import emailjs from '@emailjs/browser';
+import { environment } from '../../../environments/environment';
 
 export interface ContactFormData {
   firstName: string;
@@ -14,14 +15,18 @@ export interface ContactFormData {
   providedIn: 'root'
 })
 export class EmailService {
-  // EmailJS configuration
-  private readonly serviceId = 'service_ohcon'; // You'll need to replace this
-  private readonly templateId = 'template_contact'; // You'll need to replace this
-  private readonly publicKey = 'YOUR_PUBLIC_KEY'; // You'll need to replace this
+  // EmailJS configuration from environment
+  private readonly serviceId = environment.emailjs.serviceId;
+  private readonly templateId = environment.emailjs.templateId;
+  private readonly publicKey = environment.emailjs.publicKey;
 
   constructor() {
     // Initialize EmailJS with your public key
-    emailjs.init(this.publicKey);
+    if (this.publicKey && this.publicKey !== 'YOUR_PUBLIC_KEY_HERE' && this.publicKey !== 'YOUR_PRODUCTION_PUBLIC_KEY') {
+      emailjs.init(this.publicKey);
+    } else {
+      console.warn('EmailJS not configured. Please set up your EmailJS credentials in environment files.');
+    }
   }
 
   async sendContactEmail(formData: ContactFormData): Promise<boolean> {

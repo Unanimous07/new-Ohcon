@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ScrollAnimationDirective } from '../../shared/directives/scroll-animation.directive';
 
 interface Resource {
   title: string;
@@ -14,7 +13,7 @@ interface Resource {
 @Component({
   selector: 'app-resources',
   standalone: true,
-  imports: [CommonModule, FormsModule, ScrollAnimationDirective],
+  imports: [CommonModule, FormsModule],
   templateUrl: './resources.component.html',
   styleUrls: ['./resources.component.css']
 })

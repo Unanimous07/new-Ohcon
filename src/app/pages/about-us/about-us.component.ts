@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
-import { ScrollAnimationDirective } from '../../shared/directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [CommonModule, RouterLink, ScrollAnimationDirective],
+  imports: [CommonModule],
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.css']
 })

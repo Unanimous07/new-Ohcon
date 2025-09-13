@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ScrollAnimationDirective } from '../../shared/directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-get-involved',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, ScrollAnimationDirective],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './get-involved.component.html',
   styleUrls: ['./get-involved.component.css']
 })

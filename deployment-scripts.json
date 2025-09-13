@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build:prod": "ng build --configuration=production",
+    "build:dev": "ng build --configuration=development", 
+    "serve:prod": "ng serve --configuration=production",
+    "deploy:test": "ng build --configuration=production && echo 'Production build complete. Check docs/ folder'",
+    "test:build": "ng build --configuration=development && echo 'Development build test complete'",
+    "analyze": "ng build --configuration=production --stats-json && npx webpack-bundle-analyzer docs/browser/stats.json"
+  }
+}
