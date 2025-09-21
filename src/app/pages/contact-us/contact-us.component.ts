@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailService, ContactFormData } from '../../shared/services/email.service';
+import { SEOService } from '../../shared/services/seo.service';
 
 @Component({
   selector: 'app-contact-us',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.css'
+  styles: []
 })
-export class ContactUsComponent {
+export class ContactUsComponent implements OnInit {
   contactForm: FormGroup;
   isSubmitting = false;
   isSubmitted = false;
@@ -19,7 +20,8 @@ export class ContactUsComponent {
 
   constructor(
     private fb: FormBuilder,
-    private emailService: EmailService
+    private emailService: EmailService,
+    private seoService: SEOService
   ) {
     this.contactForm = this.fb.group({
       firstName: ['', [Validators.required, Validators.minLength(2)]],
@@ -28,6 +30,22 @@ export class ContactUsComponent {
       phone: ['', [Validators.required]],
       reason: ['', [Validators.required]],
       message: ['', [Validators.required, Validators.minLength(10)]]
+    });
+  }
+
+  ngOnInit(): void {
+    this.seoService.updateSEO({
+      title: 'Contact Us - OHCON | Get in Touch',
+      description: 'Contact OHCON for partnerships, collaborations, or inquiries about One Health initiatives in Malawi. We\'d love to hear from you.',
+      keywords: 'contact OHCON, partnerships, collaborations, One Health inquiries, Malawi healthcare contact',
+      url: 'https://ohconmw.org/contact-us',
+      image: 'https://ohconmw.org/assets/images/contact-hero.jpg'
+    });
+
+    this.seoService.generateStructuredData('WebPage', {
+      title: 'Contact Us - OHCON',
+      description: 'Get in touch with OHCON for partnerships and inquiries',
+      url: 'https://ohconmw.org/contact-us'
     });
   }
 

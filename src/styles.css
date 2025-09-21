@@ -1,5 +1,5 @@
-/* Professional One Health Typography System */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+/* Modern OHCON Design System - Inspired by contemporary NGO designs */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,70 +15,71 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.7;
-  color: #374151;
+  line-height: 1.6;
+  color: #334155;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
 }
 
-/* Professional Typography System */
+/* Modern Typography System - CGDL Inspired */
 @layer base {
   h1 {
-    font-family: 'Crimson Pro', Georgia, serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.15;
     letter-spacing: -0.025em;
     margin-bottom: 1.5rem;
-    color: #111827;
+    color: #0f172a;
   }
   
   h2 {
-    font-family: 'Crimson Pro', Georgia, serif;
-    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25rem;
     font-weight: 600;
-    line-height: 1.25;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     margin-bottom: 1.25rem;
-    color: #111827;
+    color: #0f172a;
   }
   
   h3 {
-    font-family: 'Crimson Pro', Georgia, serif;
-    font-size: 1.75rem;
-    font-weight: 500;
-    line-height: 1.3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 1.25;
     letter-spacing: -0.015em;
     margin-bottom: 1rem;
-    color: #111827;
+    color: #0f172a;
   }
   
   h4 {
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    line-height: 1.35;
+    line-height: 1.3;
     letter-spacing: -0.01em;
     margin-bottom: 0.875rem;
-    color: #111827;
+    color: #1e293b;
   }
   
   h5 {
     font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.35;
     margin-bottom: 0.75rem;
-    color: #111827;
+    color: #1e293b;
   }
   
   h6 {
     font-family: 'Inter', sans-serif;
     font-size: 1.125rem;
     font-weight: 600;
-    line-height: 1.45;
+    line-height: 1.4;
     margin-bottom: 0.625rem;
-    color: #111827;
+    color: #1e293b;
   }
   
   p {
@@ -87,118 +88,275 @@ body {
     font-weight: 400;
     line-height: 1.7;
     margin-bottom: 1.25rem;
-    color: #6B7280;
+    color: #64748b;
+  }
+  
+  /* Large text variants */
+  .text-large {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #475569;
   }
   
   /* Responsive Typography */
   @media (min-width: 640px) {
-    h1 { font-size: 3rem; }
-    h2 { font-size: 2.25rem; }
-    h3 { font-size: 1.875rem; }
-    h4 { font-size: 1.625rem; }
+    h1 { font-size: 3.5rem; line-height: 1.1; }
+    h2 { font-size: 2.75rem; }
+    h3 { font-size: 2.125rem; }
+    h4 { font-size: 1.75rem; }
     p { font-size: 1.125rem; }
+    .text-large { font-size: 1.25rem; }
+  }
+  
+  /* Responsive Typography */
+  @media (min-width: 640px) {
+    h1 { font-size: 3.5rem; line-height: 1.1; }
+    h2 { font-size: 2.75rem; }
+    h3 { font-size: 2.125rem; }
+    h4 { font-size: 1.75rem; }
+    p { font-size: 1.125rem; }
+    .text-large { font-size: 1.25rem; }
   }
   
   @media (min-width: 1024px) {
-    h1 { font-size: 3.5rem; }
-    h2 { font-size: 2.5rem; }
-    h3 { font-size: 2rem; }
-    h4 { font-size: 1.75rem; }
-    p { font-size: 1.125rem; }
+    h1 { font-size: 4rem; }
+    h2 { font-size: 3rem; }
+    h3 { font-size: 2.25rem; }
   }
+}
+
+/* Modern Color System - Blue-Green Gradient Theme */
+:root {
+  /* Primary Blue-Green Palette */
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-200: #a7f3d0;
+  --color-primary-300: #6ee7b7;
+  --color-primary-400: #34d399;
+  --color-primary-500: #10b981;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065f46;
+  --color-primary-900: #064e3b;
+  
+  /* Secondary Blue Palette */
+  --color-secondary-50: #eff6ff;
+  --color-secondary-100: #dbeafe;
+  --color-secondary-200: #bfdbfe;
+  --color-secondary-300: #93c5fd;
+  --color-secondary-400: #60a5fa;
+  --color-secondary-500: #3b82f6;
+  --color-secondary-600: #2563eb;
+  --color-secondary-700: #1d4ed8;
+  --color-secondary-800: #1e40af;
+  --color-secondary-900: #1e3a8a;
+  
+  /* Neutral Colors */
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  
+  /* Gradient Definitions */
+  --gradient-primary: linear-gradient(135deg, var(--color-secondary-600) 0%, var(--color-primary-600) 100%);
+  --gradient-hero: linear-gradient(135deg, var(--color-secondary-900) 0%, var(--color-secondary-700) 50%, var(--color-primary-700) 100%);
+  --gradient-card: linear-gradient(145deg, var(--color-gray-50) 0%, var(--color-primary-50) 100%);
 }
 
 @layer components {
-  /* Professional Typography Classes */
-  .heading-xl {
-    font-family: 'Crimson Pro', Georgia, serif;
-    @apply text-4xl sm:text-5xl lg:text-6xl font-semibold;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+  /* Modern Button System */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 0.5rem;
+    background: var(--gradient-primary);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.15);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
   }
   
-  .heading-lg {
-    font-family: 'Crimson Pro', Georgia, serif;
-    @apply text-3xl sm:text-4xl lg:text-5xl font-medium;
-    line-height: 1.15;
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px 0 rgba(59, 130, 246, 0.25);
+    color: white;
+  }
+  
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    color: #2563eb;
+    background: white;
+    border: 2px solid #2563eb;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px 0 rgba(59, 130, 246, 0.15);
+  }
+  
+  .btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
+  
+  /* Modern Card System */
+  .card-modern {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card-modern:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .card-gradient {
+    background: var(--gradient-card);
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card-gradient:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Section Styles */
+  .section-hero {
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section-clean {
+    padding: 4rem 0;
+  }
+  
+  .section-with-bg {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+  }
+  
+  @media (min-width: 1024px) {
+    .section-clean,
+    .section-with-bg {
+      padding: 6rem 0;
+    }
+  }
+  
+  /* Container System */
+  .container-clean {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container-clean {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container-clean {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  /* Modern Typography Utilities */
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .heading-hero {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.1;
     letter-spacing: -0.025em;
   }
   
-  .heading-md {
-    font-family: 'Crimson Pro', Georgia, serif;
-    @apply text-2xl sm:text-3xl lg:text-4xl font-medium;
-    line-height: 1.2;
+  .heading-section {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 1.15;
     letter-spacing: -0.02em;
   }
   
-  .heading-sm {
-    font-family: 'Crimson Pro', Georgia, serif;
-    @apply text-xl sm:text-2xl font-medium;
-    line-height: 1.25;
-    letter-spacing: -0.015em;
-  }
-  
-  .heading-xs {
-    font-family: 'Inter', sans-serif;
-    @apply text-lg sm:text-xl font-semibold;
+  .heading-card {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
     line-height: 1.3;
-    letter-spacing: -0.01em;
-  }
-  
-  .text-body-lg {
-    font-family: 'Inter', sans-serif;
-    @apply text-lg sm:text-xl;
-    line-height: 1.65;
-    color: #6B7280;
-  }
-  
-  .text-body {
-    font-family: 'Inter', sans-serif;
-    @apply text-base;
-    line-height: 1.7;
-    color: #6B7280;
-  }
-  
-  .text-body-sm {
-    font-family: 'Inter', sans-serif;
-    @apply text-sm;
-    line-height: 1.6;
-    color: #6B7280;
-  }
-  
-  /* Legacy Classes for Backward Compatibility */
-  .heading-display {
-    @apply heading-xl;
-  }
-  
-  .heading-large {
-    @apply heading-lg;
   }
   
   .text-lead {
-    @apply text-body-lg;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #64748b;
   }
   
-  .text-body-large {
-    @apply text-body-lg;
+  /* Responsive Typography */
+  @media (min-width: 640px) {
+    .heading-hero {
+      font-size: 3rem;
+    }
+    .heading-section {
+      font-size: 2.25rem;
+    }
+    .heading-card {
+      font-size: 1.5rem;
+    }
+    .text-lead {
+      font-size: 1.25rem;
+    }
   }
   
-  .card-title {
-    @apply heading-xs;
+  @media (min-width: 1024px) {
+    .heading-hero {
+      font-size: 3.75rem;
+    }
+    .heading-section {
+      font-size: 3rem;
+    }
   }
-  
-  .card-text {
-    @apply text-body;
-  }
-}
-
-/* Utility Classes */
-.section-clean {
-  @apply py-16 lg:py-24;
-}
-
-.container-clean {
-  @apply container mx-auto px-4 lg:px-8;
 }
 
 /* Animation Utilities */

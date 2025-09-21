@@ -1,158 +1,183 @@
-<!-- Hero Section -->
-<div class="relative overflow-hidden">
-  <!-- Image Container with Parallax -->
-  <div class="flex h-[80vh] lg:h-[90vh] w-full relative">
+<!-- Modern Hero Section - CGDL Inspired with Background Image -->
+<div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
     <img 
-      class="object-cover w-full transform scale-105 motion-safe:animate-subtle-zoom" 
+      class="object-cover w-full h-full transform scale-105" 
       src="assets/images/home.jpg" 
       alt="OHCON Healthcare"      
       loading="eager"
       decoding="async">
-    <!-- Enhanced Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent"></div>
+  </div>
+  
+  <!-- Gradient Overlay with Transparency -->
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-teal-700/80"></div>
+  
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.2) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 0%, transparent 50%);"></div>
   </div>
   
   <!-- Hero Content -->
-  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-7xl px-6 lg:px-8">
-    <div class="space-y-6 lg:space-y-8">
-      <h1 class="heading-xl text-white text-center">
-        One Health for a resilient Malawi — 
-        <span class="rotating-text text-blue-400 transition-all duration-500 ease-in-out">
-          {{ currentText }}
-        </span>, protected together.
+  <div class="container-clean relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <!-- Main Heading -->
+      <h1 class="heading-hero text-white mb-6">
+        One Health for a 
+        <span class="text-gradient bg-gradient-to-r from-emerald-300 to-blue-300 bg-clip-text text-transparent">Resilient Malawi</span>
       </h1>
-      <p class="text-body-lg text-white/90 mx-auto text-center">
-        Connecting human, animal, and environmental health through community-led solutions.
+      
+      <!-- Subtitle -->
+      <p class="text-lead text-white/90 mb-8 max-w-2xl mx-auto">
+        Connecting human, animal, and environmental health through 
+        community-led solutions and innovative partnerships across Malawi.
       </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4 lg:gap-6 pt-4">
-  <a href="/programs" class="inline-flex items-center justify-center px-8 lg:px-10 py-4 lg:py-5 text-lg lg:text-xl font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-200">
-          Our Programs
-          <svg class="w-5 h-5 lg:w-6 lg:h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <a href="/programs" class="btn-primary btn-large">
+          Explore Our Programs
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
         </a>
-  <a href="/get-involved" class="inline-flex items-center justify-center px-8 lg:px-10 py-4 lg:py-5 text-lg lg:text-xl font-semibold text-blue-600 bg-white rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-200">
-          Get Involved
+        <a href="/get-involved" class="btn-secondary btn-large bg-white text-blue-600 hover:bg-gray-100">
+          Join Our Mission
         </a>
+      </div>
+      
+      <!-- Stats Section -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-white mb-2">5+</div>
+          <div class="text-white/80">Years of Impact</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-white mb-2">300+</div>
+          <div class="text-white/80">People Reached</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-white mb-2">50+</div>
+          <div class="text-white/80">Healthcare Partners</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-white mb-2">15+</div>
+          <div class="text-white/80">Professionals Trained</div>
+        </div>
       </div>
     </div>
   </div>
   
   <!-- Scroll Indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 motion-safe:animate-bounce">
-    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-nd" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
     </svg>
   </div>
 </div>
 
-<!-- Main Content -->
-<section class="py-16 lg:py-24 bg-gray-50">
-  <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
-    <!-- Organization Overview -->
-    <div class="max-w-4xl mx-auto text-center mb-20 lg:mb-28">
-      <h2 class="heading-md text-gray-900 mb-6">About OHCON</h2>
-      <p class="text-body-lg text-gray-600">
-        OneHealth collaborative Network (OHCON) is a Malawian NGO implementing practical One Health solutions through school programs, integrated clinics, WASH interventions, AMR stewardship, and policy engagement—working with government, universities, and communities.
+<!-- About Section -->
+<section class="section-clean">
+  <div class="container-clean">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="heading-section text-gray-900 mb-6">
+          Bridging Health, 
+          <span class="text-gradient">Shaping Futures</span>
+        </h2>
+        <p class="text-lead mb-6">
+          The One Health Consortium Malawi (OHCON) is a leading network of organizations 
+          committed to addressing health challenges through an integrated approach that 
+          recognizes the interconnection between people, animals, and the environment.
+        </p>
+        <p class="text-gray-600 mb-8">
+          We bring together healthcare professionals, veterinarians, environmental scientists, 
+          and community leaders to create sustainable solutions for Malawi's most pressing 
+          health challenges.
+        </p>
+        <a href="/about-us" class="btn-primary">
+          Learn More About Us
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+      <div class="relative">
+        <img 
+          src="assets/images/one-healthy.jpg" 
+          alt="One Health Approach" 
+          class="rounded-2xl shadow-2xl">
+        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-primary-400 to-secondary-600 rounded-2xl opacity-20"></div>
+        <div class="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-secondary-400 to-primary-600 rounded-2xl opacity-20"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Programs Section -->
+<section class="section-with-bg">
+  <div class="container-clean">
+    <div class="text-center mb-16">
+      <h2 class="heading-section text-gray-900 mb-4">What We Do</h2>
+      <p class="text-lead max-w-2xl mx-auto">
+        Our integrated approach addresses health challenges through innovative programs 
+        that connect human, animal, and environmental health.
       </p>
     </div>
 
-    <!-- Section Heading -->
-    <div class="text-center mb-12 lg:mb-16">
-      <h2 class="heading-lg text-gray-900 mb-4">Our Impact</h2>
-      <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-    </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-10 mb-20 lg:mb-28 max-w-7xl mx-auto">
-      <!-- Metric 1 -->
-  <div class="bg-white rounded-2xl p-6 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-blue-200" tabindex="0">
-        <div class="text-center">
-          <div class="text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold text-blue-600 mb-4 leading-tight break-words">2</div>
-          <h3 class="card-title font-semibold text-gray-900 mb-2 leading-tight">One Health Clubs</h3>
-          <p class="card-text text-gray-600">Launched (pilot target)</p>
-        </div>
-      </div>
-
-      <!-- Metric 2 -->
-  <div class="bg-white rounded-2xl p-6 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-blue-200" tabindex="0">
-        <div class="text-center">
-          <div class="text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold text-blue-600 mb-4 leading-tight break-words">300+</div>
-          <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-gray-900 mb-2 leading-tight">People Reached</h3>
-          <p class="text-sm lg:text-base text-gray-600">By awareness campaigns (annual target)</p>
-        </div>
-      </div>
-
-      <!-- Metric 3 -->
-  <div class="bg-white rounded-2xl p-6 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-blue-200" tabindex="0">
-        <div class="text-center">
-          <div class="text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold text-blue-600 mb-4 leading-tight break-words">30</div>
-          <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-gray-900 mb-2 leading-tight">Health & Veterinary Clients</h3>
-          <p class="text-sm lg:text-base text-gray-600">Via joint clinics (pilot target)</p>
-        </div>
-      </div>
-
-      <!-- Metric 4 -->
-  <div class="bg-white rounded-2xl p-6 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-blue-200" tabindex="0">
-        <div class="text-center">
-          <div class="text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold text-blue-600 mb-4 leading-tight break-words">15+</div>
-          <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-gray-900 mb-2 leading-tight">Professionals Trained</h3>
-          <p class="text-sm lg:text-base text-gray-600">In One Health principles</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section Heading -->
-    <div class="text-center mb-12 lg:mb-16">
-      <h2 class="heading-lg text-gray-900 mb-4">Our Programs</h2>
-      <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-8 lg:gap-12 mb-12 lg:mb-16 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
       <!-- Education & Youth -->
-      <div class="bg-white rounded-2xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div class="flex items-center justify-center w-20 h-20 lg:w-24 lg:h-24 bg-blue-100 rounded-xl mb-8">
-          <svg class="w-10 h-10 lg:w-12 lg:h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div class="card-modern p-8 text-center group">
+        <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.168 18.477 18.582 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
           </svg>
         </div>
-        <h3 class="heading-sm text-gray-900 mb-4">Education & Youth</h3>
-        <p class="text-body text-gray-600">
-          One Health clubs, youth ambassadors, accredited courses.
+        <h3 class="heading-card text-gray-900 mb-4">Education & Youth</h3>
+        <p class="text-gray-600 mb-6">
+          Building next-generation leaders through One Health clubs, youth ambassador programs, and accredited educational courses.
         </p>
+        <a href="/programs" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+          Learn More →
+        </a>
       </div>
 
       <!-- Integrated Clinics -->
-      <div class="bg-white rounded-2xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div class="flex items-center justify-center w-20 h-20 lg:w-24 lg:h-24 bg-blue-100 rounded-xl mb-8">
-          <svg class="w-10 h-10 lg:w-12 lg:h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      <div class="card-modern p-8 text-center group">
+        <div class="w-16 h-16 bg-gradient-to-br from-secondary-500 to-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
           </svg>
         </div>
-        <h3 class="heading-sm text-gray-900 mb-4">Integrated Clinics</h3>
-        <p class="text-body text-gray-600">
-          Joint human-animal community outreach for screening & vaccination.
+        <h3 class="heading-card text-gray-900 mb-4">Integrated Clinics</h3>
+        <p class="text-gray-600 mb-6">
+          Joint human-animal community outreach programs providing comprehensive screening, vaccination, and health services.
         </p>
+        <a href="/programs" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+          Learn More →
+        </a>
       </div>
 
       <!-- WASH & Environment -->
-      <div class="bg-white rounded-2xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div class="flex items-center justify-center w-20 h-20 lg:w-24 lg:h-24 bg-blue-100 rounded-xl mb-8">
-          <svg class="w-10 h-10 lg:w-12 lg:h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+      <div class="card-modern p-8 text-center group">
+        <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
           </svg>
         </div>
-        <h3 class="heading-sm text-gray-900 mb-4">WASH & Environment</h3>
-        <p class="text-body text-gray-600">
-          School latrines, clean water, and animal waste management.
+        <h3 class="heading-card text-gray-900 mb-4">WASH & Environment</h3>
+        <p class="text-gray-600 mb-6">
+          Environmental health initiatives including clean water access, sanitation improvements, and sustainable waste management.
         </p>
+        <a href="/programs" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+          Learn More →
+        </a>
       </div>
     </div>
 
-    <!-- Programs CTA -->
     <div class="text-center">
-      <a href="/programs" class="inline-flex items-center px-10 lg:px-12 py-4 lg:py-5 text-lg lg:text-xl font-medium text-white bg-blue-600 rounded-xl hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-        View all programs
-        <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <a href="/programs" class="btn-primary btn-large">
+        Explore All Programs
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
         </svg>
       </a>
@@ -160,109 +185,56 @@ nd" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
   </div>
 </section>
 
-<!-- News & Events Section -->
-<section class="py-16 lg:py-24 bg-white">
-  <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
-    <!-- Section Heading -->
-    <div class="text-center mb-12 lg:mb-16">
-      <h2 class="heading-lg text-gray-900 mb-4">Latest News & Events</h2>
-      <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+<!-- Impact Stats Section -->
+<section class="section-clean">
+  <div class="container-clean">
+    <div class="text-center mb-16">
+      <h2 class="heading-section text-gray-900 mb-4">Our Impact</h2>
+      <p class="text-lead max-w-2xl mx-auto">
+        Measurable results from our integrated One Health approach across Malawi.
+      </p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16 max-w-6xl mx-auto">
-      <!-- Event 1 -->
-      <div class="bg-gray-50 rounded-2xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium inline-block mb-6">
-          Event
-        </div>
-        <h3 class="heading-sm text-gray-900 mb-6">One Health Symposium 2025 — Registration Open</h3>
-        <p class="text-body text-gray-600 mb-6">
-          Join us for our annual symposium bringing together health professionals, researchers, and community leaders to advance One Health principles in Malawi.
-        </p>
-        <a href="/news" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-lg">
-          Learn more
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </a>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center">
+        <div class="text-4xl lg:text-5xl font-bold text-gradient mb-2">300+</div>
+        <div class="text-gray-600 font-medium">People Reached Annually</div>
       </div>
-
-      <!-- Event 2 -->
-      <div class="bg-gray-50 rounded-2xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div class="bg-green-100 text-green-600 px-4 py-2 rounded-full text-sm font-medium inline-block mb-6">
-          Course
-        </div>
-        <h3 class="heading-sm text-gray-900 mb-6">New Accredited "Introduction to One Health" Course Now Live</h3>
-        <p class="text-body text-gray-600 mb-6">
-          Our comprehensive 5-module course is now available with certification. Perfect for health professionals and community champions.
-        </p>
-        <a href="/resources" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-lg">
-          Enroll now
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </a>
+      <div class="text-center">
+        <div class="text-4xl lg:text-5xl font-bold text-gradient mb-2">15+</div>
+        <div class="text-gray-600 font-medium">Professionals Trained</div>
       </div>
-    </div>
-
-    <!-- News CTA -->
-    <div class="text-center">
-      <a href="/news" class="inline-flex items-center px-10 lg:px-12 py-4 lg:py-5 text-lg lg:text-xl font-medium text-blue-600 bg-blue-50 rounded-xl hover:bg-blue-100 transform hover:scale-105 transition-all duration-300">
-        Read more news & events
-        <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-        </svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Partners Section -->
-<section class="py-16 lg:py-24 bg-gray-50">
-  <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
-    <!-- Section Heading -->
-    <div class="text-center mb-12 lg:mb-16">
-      <h2 class="heading-lg text-gray-900 mb-4">Our Partners</h2>
-      <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-      <p class="text-body-lg text-gray-600 mx-auto">Working together to advance One Health in Malawi</p>
-    </div>
-
-    <!-- Partner categories -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 max-w-4xl mx-auto">
-      <div class="text-center p-6 lg:p-8 bg-white rounded-lg shadow-sm">
-        <p class="text-sm lg:text-base font-medium text-gray-600">Ministry of Health</p>
+      <div class="text-center">
+        <div class="text-4xl lg:text-5xl font-bold text-gradient mb-2">2</div>
+        <div class="text-gray-600 font-medium">One Health Clubs</div>
       </div>
-      <div class="text-center p-6 lg:p-8 bg-white rounded-lg shadow-sm">
-        <p class="text-sm lg:text-base font-medium text-gray-600">Universities</p>
-      </div>
-      <div class="text-center p-6 lg:p-8 bg-white rounded-lg shadow-sm">
-        <p class="text-sm lg:text-base font-medium text-gray-600">NGO Partners</p>
-      </div>
-      <div class="text-center p-6 lg:p-8 bg-white rounded-lg shadow-sm">
-        <p class="text-sm lg:text-base font-medium text-gray-600">International Funders</p>
+      <div class="text-center">
+        <div class="text-4xl lg:text-5xl font-bold text-gradient mb-2">30</div>
+        <div class="text-gray-600 font-medium">Clinic Clients Served</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Call to Action Section -->
-<section class="py-16 lg:py-24 bg-blue-600 text-white">
-  <div class="container mx-auto px-4 lg:px-8 text-center max-w-5xl">
-    <h2 class="heading-lg text-white mb-6 lg:mb-8">
+<section class="section-hero text-white">
+  <div class="container-clean text-center">
+    <h2 class="heading-section text-white mb-6">
       Ready to Join Our Mission?
     </h2>
-    <p class="text-body-lg text-white/90 mb-10 lg:mb-12 max-w-3xl mx-auto">
-      Partner with us to build a healthier, more resilient Malawi through One Health solutions.
+    <p class="text-lead text-white/90 mb-8 max-w-2xl mx-auto">
+      Partner with us to build a healthier, more resilient Malawi through innovative One Health solutions.
     </p>
     
-    <div class="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center max-w-md mx-auto">
-      <a href="/contact-us" class="bg-white text-blue-600 px-8 lg:px-10 py-3 lg:py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
-        Partner with us
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/contact-us" class="btn-secondary btn-large bg-white text-blue-600 hover:bg-gray-100">
+        Partner with Us
       </a>
-      <a href="/get-involved" class="border-2 border-white text-white px-8 lg:px-10 py-3 lg:py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300">
-        Get Involved
+      <a href="/get-involved" class="btn-primary btn-large">
+        Get Involved Today
       </a>
     </div>
   </div>
 </section>
+
 

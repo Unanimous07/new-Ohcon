@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SEOService } from '../../shared/services/seo.service';
 
 @Component({
   selector: 'app-about-us',
@@ -8,7 +9,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.css']
 })
-export class AboutUsComponent {
+export class AboutUsComponent implements OnInit {
   selectedBoardMember: any = null;
 
   boardMembers = [
@@ -95,6 +96,24 @@ export class AboutUsComponent {
       icon: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'
     }
   ];
+
+  constructor(private seoService: SEOService) {}
+
+  ngOnInit(): void {
+    this.seoService.updateSEO({
+      title: 'About Us - OHCON | One Health Collaborative Network',
+      description: 'Learn about OHCON\'s mission, vision, and team. We are dedicated to advancing One Health principles in Malawi through collaborative healthcare solutions.',
+      keywords: 'OHCON team, One Health mission, Malawi healthcare, about us, leadership team, board members',
+      url: 'https://ohconmw.org/about-us',
+      image: 'https://ohconmw.org/assets/images/team-photo.jpg'
+    });
+
+    this.seoService.generateStructuredData('WebPage', {
+      title: 'About Us - OHCON',
+      description: 'Learn about OHCON\'s mission, vision, and team',
+      url: 'https://ohconmw.org/about-us'
+    });
+  }
 
   contactTeamMember(email: string) {
     window.location.href = `mailto:${email}`;

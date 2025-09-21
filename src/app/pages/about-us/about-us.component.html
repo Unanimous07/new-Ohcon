@@ -1,32 +1,59 @@
 <!-- About Us Page -->
 <div class="min-h-screen bg-white">
-  <!-- Hero Section (programs-style) -->
-  <section class="relative py-32 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
-    <div class="absolute inset-0 bg-black/30"></div>
-    <div class="container mx-auto px-4 lg:px-8 relative z-10">
+  <!-- Modern Hero Section -->
+  <section class="relative py-24 lg:py-32 overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img 
+        class="object-cover w-full h-full" 
+        src="assets/images/collaboration.webp" 
+        alt="OHCON Team Collaboration"      
+        loading="eager"
+        decoding="async">
+    </div>
+    
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-900/85 via-blue-800/75 to-teal-700/85"></div>
+    
+    <div class="container-clean relative z-10">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="heading-xl text-white mb-6">About OHCON</h1>
-        <p class="text-body-lg text-white/90 max-w-4xl mx-auto">
-          We connect human, animal, and environmental health through community-led programs, evidence-based research, and sustainable partnerships across Malawi.
+        <h1 class="heading-hero text-white mb-6">About OHCON</h1>
+        <p class="text-lead text-white/90 max-w-3xl mx-auto">
+          We connect human, animal, and environmental health through community-led programs, 
+          evidence-based research, and sustainable partnerships across Malawi.
         </p>
       </div>
     </div>
   </section>
 
   <!-- Mission & Vision Section -->
-  <section class="section-clean bg-gray-50">
+  <section class="section-with-bg">
     <div class="container-clean">
-      <div class="grid lg:grid-cols-2 gap-16 lg:gap-20">
-        <div>
-          <h2 class="heading-md text-gray-900 mb-6">Our Mission</h2>
-          <p class="text-body text-gray-600">
-            To protect and improve the health and livelihoods of Malawians through integrated, community-led One Health solutions that connect human, animal, and environmental well-being.
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div class="card-modern p-8 lg:p-10">
+          <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-600 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h2 class="heading-section text-gray-900 mb-6">Our Mission</h2>
+          <p class="text-gray-600 leading-relaxed">
+            To protect and improve the health and livelihoods of Malawians through integrated, 
+            community-led One Health solutions that connect human, animal, and environmental well-being.
           </p>
         </div>
-        <div>
-          <h2 class="heading-md text-gray-900 mb-6">Our Vision</h2>
-          <p class="text-body text-gray-600">
-            A resilient Malawi where people, animals, and ecosystems thrive together—free from preventable diseases and environmental risks, supported by locally owned, multi-sectoral systems.
+        
+        <div class="card-modern p-8 lg:p-10">
+          <div class="w-16 h-16 bg-gradient-to-br from-secondary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+          </div>
+          <h2 class="heading-section text-gray-900 mb-6">Our Vision</h2>
+          <p class="text-gray-600 leading-relaxed">
+            A resilient Malawi where people, animals, and ecosystems thrive together—free from 
+            preventable diseases and environmental risks, supported by locally owned, multi-sectoral systems.
           </p>
         </div>
       </div>
@@ -34,16 +61,19 @@
   </section>
 
   <!-- Why One Health Matters Section -->
-  <section class="section-clean bg-white">
+  <section class="section-clean">
     <div class="container-clean">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="heading-lg text-gray-900 mb-12">Why One Health Matters</h2>
-        <div class="space-y-6">
-          <p class="text-body text-gray-600">
-            Malawi's economy and food security are tightly linked to livestock and natural resources. When animal disease, poor sanitation, or environmental degradation occur, they can quickly threaten human health and livelihoods.
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="heading-section text-gray-900 mb-6">Why One Health Matters</h2>
+        <div class="space-y-6 text-left">
+          <p class="text-lead text-gray-600">
+            Malawi's economy and food security are tightly linked to livestock and natural resources. 
+            When animal disease, poor sanitation, or environmental degradation occur, they can quickly 
+            threaten human health and livelihoods.
           </p>
-          <p class="text-body text-gray-600">
-            One Health is the collaborative approach that prevents and responds to these cross-sectoral threats—improving outcomes more effectively than isolated programs.
+          <p class="text-gray-600 text-lg leading-relaxed">
+            One Health is the collaborative approach that prevents and responds to these cross-sectoral 
+            threats—improving outcomes more effectively than isolated programs.
           </p>
         </div>
       </div>
@@ -55,10 +85,10 @@
     <div class="container mx-auto px-4 lg:px-8">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12 lg:mb-16">
-          <h2 class="text-3xl lg:text-4xl font-sans font-bold text-blue-700 mb-4">Our Story</h2>
+          <h2 class="heading-section text-blue-700 mb-4">Our Story</h2>
           <div class="w-20 h-1 bg-blue-600 mx-auto mb-6 rounded-full"></div>
           <div class="max-w-3xl mx-auto">
-            <p class="text-xl text-gray-600 font-medium">
+            <p class="text-lead font-medium">
               A journey of passion, collaboration, and unwavering commitment to One Health in Malawi
             </p>
           </div>

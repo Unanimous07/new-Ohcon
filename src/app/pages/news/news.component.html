@@ -1,33 +1,48 @@
 <!-- News Page -->
-<div class="bg-gray-50 min-h-screen">
-  <!-- Hero Section -->
-  <section class="py-32 bg-gradient-to-br from-blue-900 to-blue-700 text-white relative">
-    <div class="container mx-auto px-4 lg:px-8 relative z-10">      
-      <div class="max-w-3xl mx-auto text-center">
-        <h1 class="heading-xl text-white mb-6">News & Updates</h1>
-        <p class="text-body-lg text-white/90">Stay informed about OHCON's latest initiatives, achievements, and impact in promoting One Health</p>
+<div class="bg-white min-h-screen">
+  <!-- Modern Hero Section -->
+  <section class="relative py-24 lg:py-32 overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img 
+        class="object-cover w-full h-full" 
+        src="assets/images/edu.jpg" 
+        alt="OHCON News"      
+        loading="eager"
+        decoding="async">
+    </div>
+    
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-900/85 via-blue-800/75 to-teal-700/85"></div>
+    
+    <div class="container-clean relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="heading-hero text-white mb-6">News & Updates</h1>
+        <p class="text-lead text-white/90 max-w-3xl mx-auto">
+          Stay informed about OHCON's latest initiatives, achievements, and impact in promoting One Health across Malawi.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Featured News -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4 lg:px-8">
-      <div class="bg-white rounded-2xl shadow-xl overflow-hidden max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="relative h-96 md:h-full">
+  <section class="section-clean">
+    <div class="container-clean">
+      <div class="card-modern overflow-hidden max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-0">
+          <div class="relative h-80 lg:h-full">
             <img src="assets/images/programs_1.jpg" alt="Secondary Approach in OneHealth" class="w-full h-full object-cover">
             <div class="absolute top-6 left-6">
-              <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Featured</span>
+              <span class="bg-gradient-to-r from-primary-500 to-secondary-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Featured</span>
             </div>
           </div>
-          <div class="p-8">
+          <div class="p-8 lg:p-12">
             <div class="flex items-center mb-4">
               <span class="text-gray-500 text-sm">February 20, 2025</span>
               <span class="mx-2 text-gray-300">•</span>
-              <span class="text-blue-600 text-sm font-semibold">Healthcare</span>
+              <span class="text-primary-600 text-sm font-semibold">Healthcare</span>
             </div>
-            <h2 class="heading-md text-gray-900 mb-4">Introducing Secondary School Approach in OneHealth</h2>
+            <h2 class="heading-card text-gray-900 mb-4">Introducing Secondary School Approach in OneHealth</h2>
             <p class="text-body text-gray-600 mb-6">
               A groundbreaking initiative to educate young citizens about the importance of One Health principles and their role in community wellbeing.
             </p>

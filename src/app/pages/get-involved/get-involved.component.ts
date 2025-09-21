@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SEOService } from '../../shared/services/seo.service';
 
 @Component({
   selector: 'app-get-involved',
   standalone: true,
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './get-involved.component.html',
-  styleUrls: ['./get-involved.component.css']
+  styles: []
 })
 export class GetInvolvedComponent implements OnInit {
   // Volunteer Positions Data
@@ -51,9 +52,25 @@ export class GetInvolvedComponent implements OnInit {
     motivation: ['', [Validators.required, Validators.minLength(50)]]
   });
 
-  constructor(private fb: FormBuilder) { }
+  constructor(
+    private fb: FormBuilder,
+    private seoService: SEOService
+  ) { }
 
   ngOnInit(): void {
+    this.seoService.updateSEO({
+      title: 'Get Involved - OHCON | Volunteer & Partnership Opportunities',
+      description: 'Join OHCON\'s mission to advance One Health in Malawi. Explore volunteer opportunities, partnerships, and ways to support our healthcare initiatives.',
+      keywords: 'volunteer opportunities, OHCON partnerships, get involved, One Health volunteer, Malawi healthcare volunteer',
+      url: 'https://ohconmw.org/get-involved',
+      image: 'https://ohconmw.org/assets/images/volunteer-hero.jpg'
+    });
+
+    this.seoService.generateStructuredData('WebPage', {
+      title: 'Get Involved - OHCON',
+      description: 'Volunteer and partnership opportunities with OHCON',
+      url: 'https://ohconmw.org/get-involved'
+    });
   }
 
   toggleVolunteerForm() {
